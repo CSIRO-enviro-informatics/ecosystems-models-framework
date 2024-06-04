@@ -1,0 +1,2175 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "emfo:State",
+    "onProperty" : "emfo:toState"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "emfo:State",
+    "onProperty" : "emfo:fromState"
+  }, {
+    "@id" : "http://w3id.org/env/aemf",
+    "@type" : "owl:Ontology",
+    "created" : "2024-06-03",
+    "creator" : "https://orcid.org/0000-0002-3884-3420",
+    "description" : "An RDF (labelled graph) representation of the Australian Ecosystems Models Framework. \r\n\r\n",
+    "isFormatOf" : "https://research.csiro.au/biodiversity-knowledge/projects/models-framework/",
+    "license" : "https://creativecommons.org/public-domain/cc0/",
+    "source" : [ {
+      "@id" : "https://www.dcceew.gov.au/environment/land/publications/nvis-fact-sheet-series-4-2"
+    }, {
+      "@id" : "https://research.csiro.au/biodiversity-knowledge/projects/models-framework/"
+    } ],
+    "title" : "The Australian Ecosystems Models Framework Ontology",
+    "imports" : [ "http://www.w3.org/2004/02/skos/core", "http://purl.org/dc/elements/1.1/" ]
+  }, {
+    "@id" : "aemf:Fire_flood_storm",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Fire, flood, storm"
+  }, {
+    "@id" : "aemf:Fire_or_flood",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Fire or flood"
+  }, {
+    "@id" : "aemf:Localised_disturbance_250_years",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Localised disturbance >~250 years"
+  }, {
+    "@id" : "aemf:MVG1",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Rainforests and Vine thickets"
+  }, {
+    "@id" : "aemf:MVG10",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Other Forests and Woodlands"
+  }, {
+    "@id" : "aemf:MVG11",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Eucalypt open woodlands"
+  }, {
+    "@id" : "aemf:MVG12",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Tropical Eucalypt Woodlands/Grasslands"
+  }, {
+    "@id" : "aemf:MVG13",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Acacia Open Woodlands"
+  }, {
+    "@id" : "aemf:MVG14",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Mallee Woodlands and Shrublands"
+  }, {
+    "@id" : "aemf:MVG15",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Low Closed Forests and Tall Closed Shrublands"
+  }, {
+    "@id" : "aemf:MVG16",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Acacia Shrublands"
+  }, {
+    "@id" : "aemf:MVG17",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Other Shrublands"
+  }, {
+    "@id" : "aemf:MVG18",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Heathlands"
+  }, {
+    "@id" : "aemf:MVG19",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Tussock Grasslands"
+  }, {
+    "@id" : "aemf:MVG2",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Eucalypt Tall Open Forests"
+  }, {
+    "@id" : "aemf:MVG20",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Hummock Grasslands"
+  }, {
+    "@id" : "aemf:MVG21",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Other Grasslands, Herblands, Sedgelands and Rushlands"
+  }, {
+    "@id" : "aemf:MVG22",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Chenopod Shrublands, Samphire Shrublands and Forblands"
+  }, {
+    "@id" : "aemf:MVG23",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Mangroves"
+  }, {
+    "@id" : "aemf:MVG24",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Inland Aquatic - freshwater, salt lakes, lagoons"
+  }, {
+    "@id" : "aemf:MVG25",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Cleared, Non-Native Vegetation, Buildings"
+  }, {
+    "@id" : "aemf:MVG26",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Unclassified Native Vegetation"
+  }, {
+    "@id" : "aemf:MVG27",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Naturally Bare - sand, rock, claypan, mudflat"
+  }, {
+    "@id" : "aemf:MVG28",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Sea and Estuaries"
+  }, {
+    "@id" : "aemf:MVG29",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Regrowth, Modified Native Vegetation"
+  }, {
+    "@id" : "aemf:MVG3",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Eucalypt Open Forests"
+  }, {
+    "@id" : "aemf:MVG30",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Unclassified Forest"
+  }, {
+    "@id" : "aemf:MVG31",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Other Open Woodlands"
+  }, {
+    "@id" : "aemf:MVG32",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Mallee Open Woodlands and Sparse Mallee Shrublands"
+  }, {
+    "@id" : "aemf:MVG4",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Eucalypt Low Open Forests"
+  }, {
+    "@id" : "aemf:MVG5",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Eucalypt woodlands"
+  }, {
+    "@id" : "aemf:MVG6",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Acacia Forests and Woodlands"
+  }, {
+    "@id" : "aemf:MVG7",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Callitris Forests and Woodlands"
+  }, {
+    "@id" : "aemf:MVG8",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Casuarina Forests and Woodlands"
+  }, {
+    "@id" : "aemf:MVG9",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Melaleuca Forests and Woodlands"
+  }, {
+    "@id" : "aemf:MVG99",
+    "rdf:type" : {
+      "@id" : "emfo:NVIS-MVG"
+    },
+    "prefLabel" : "Unknown/No Data"
+  }, {
+    "@id" : "aemf:Ongoing_intermittent_gap-phase_recruitment",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Ongoing intermittent gap-phase recruitment"
+  }, {
+    "@id" : "aemf:Ongoing_time_no_major_or_localized_disturbances",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Ongoing time, no major or localized disturbances"
+  }, {
+    "@id" : "aemf:Repeat_fire_flood_or_storm",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Repeat fire, flood or storm"
+  }, {
+    "@id" : "aemf:Time_15-40_years",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Time 15-40 years"
+  }, {
+    "@id" : "aemf:Time_150_years",
+    "rdf:type" : {
+      "@id" : "emfo:Pressure"
+    },
+    "prefLabel" : "Time >150 years"
+  }, {
+    "@id" : "aemf:a1.1",
+    "hasExpression" : [ "aemf:e1.16", "aemf:e1.13", "aemf:e1.12", "aemf:e1.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "1.1",
+    "prefLabel" : "Marine influenced rainforests"
+  }, {
+    "@id" : "aemf:a1.2",
+    "hasExpression" : [ "aemf:e1.24", "aemf:e1.23", "aemf:e1.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "1.2",
+    "prefLabel" : "Non-marine influenced rainforest and vine thickets"
+  }, {
+    "@id" : "aemf:a10.1",
+    "hasExpression" : [ "aemf:e10.12", "aemf:e10.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "10.1",
+    "prefLabel" : "Alpine grasslands maintained by small-scale disturbance"
+  }, {
+    "@id" : "aemf:a10.2",
+    "hasExpression" : [ "aemf:e10.23", "aemf:e10.22" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "10.2",
+    "prefLabel" : "Coastal dune grasslands"
+  }, {
+    "@id" : "aemf:a10.3",
+    "hasExpression" : [ "aemf:e10.32", "aemf:e10.31" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "10.3",
+    "prefLabel" : "Temperate mesic grasslands"
+  }, {
+    "@id" : "aemf:a10.4",
+    "hasExpression" : [ "aemf:e10.44", "aemf:e10.43", "aemf:e10.42", "aemf:e10.41" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "10.4",
+    "prefLabel" : "Rainfall-pulse driven arid and semi-arid tussock grasslands"
+  }, {
+    "@id" : "aemf:a11.1",
+    "hasExpression" : [ "aemf:e11.15", "aemf:e11.14", "aemf:e11.13", "aemf:e11.12", "aemf:e11.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "11.1",
+    "prefLabel" : "Hummock grasslands"
+  }, {
+    "@id" : "aemf:a12.1",
+    "hasExpression" : [ "aemf:e12.16", "aemf:e12.15", "aemf:e12.14", "aemf:e12.13", "aemf:e12.12", "aemf:e12.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "12.1",
+    "prefLabel" : "Wetlands"
+  }, {
+    "@id" : "aemf:a13.1",
+    "hasExpression" : [ "aemf:e13.14", "aemf:e13.12", "aemf:e13.19", "aemf:e13.17", "aemf:e13.13", "aemf:e13.18", "aemf:e13.11", "aemf:e13.16" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "13.1",
+    "prefLabel" : "Estuarine mangrove & saltmarsh system"
+  }, {
+    "@id" : "aemf:a13.2",
+    "hasExpression" : [ "aemf:e13.23", "aemf:e13.22", "aemf:e13.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "13.2",
+    "prefLabel" : "Coastal mangrove system"
+  }, {
+    "@id" : "aemf:a14.1",
+    "hasExpression" : [ "aemf:e14.14", "aemf:e14.13" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "14.1",
+    "prefLabel" : "Dryland chenopod shrublands"
+  }, {
+    "@id" : "aemf:a14.2",
+    "hasExpression" : [ "aemf:e14.23", "aemf:e14.22", "aemf:e14.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "14.2",
+    "prefLabel" : "Inland saline lake communities"
+  }, {
+    "@id" : "aemf:a15.1",
+    "hasExpression" : [ "aemf:e15.13", "aemf:e15.12", "aemf:e15.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "15.1",
+    "prefLabel" : "Lowland streams"
+  }, {
+    "@id" : "aemf:a16.1",
+    "hasExpression" : "aemf:e16.11",
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "16.1",
+    "prefLabel" : "NA type"
+  }, {
+    "@id" : "aemf:a2.1",
+    "hasExpression" : "aemf:e2.13",
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "2.1",
+    "prefLabel" : "Coastal floodplain forests"
+  }, {
+    "@id" : "aemf:a2.2",
+    "hasExpression" : [ "aemf:e2.27", "aemf:e2.26", "aemf:e2.23", "aemf:e2.22", "aemf:e2.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "2.2",
+    "prefLabel" : "Tall open obligate-seeder eucalypt forests"
+  }, {
+    "@id" : "aemf:a2.3",
+    "hasExpression" : [ "aemf:e2.36", "aemf:e2.35", "aemf:e2.34", "aemf:e2.33", "aemf:e2.32", "aemf:e2.31" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "2.3",
+    "prefLabel" : "Resprouter eucalypt forests"
+  }, {
+    "@id" : "aemf:a3.1",
+    "hasExpression" : [ "aemf:e3.15", "aemf:e3.14", "aemf:e3.13", "aemf:e3.12", "aemf:e3.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "3.1",
+    "prefLabel" : "Lowland resprouter temperate and subtropical shrub-grass eucalypt woodlands"
+  }, {
+    "@id" : "aemf:a3.2",
+    "hasExpression" : [ "aemf:e3.24", "aemf:e3.23", "aemf:e3.22", "aemf:e3.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "3.2",
+    "prefLabel" : "Inland floodplain eucalypt woodlands and forests"
+  }, {
+    "@id" : "aemf:a3.3",
+    "contributor" : "\r\nGarry Cook, Carl Gosper, Judith Harvey, Adam \r\nLiedloff, Lachie McCaw, Suzanne Prober, Kevin \r\nThiele, Libby Rumpff, Colin Yates. \r\n",
+    "source" : "\r\nGosper CR, Yates CJ, Cook GD, Harvey JM, Liedloff A, \r\nMcCaw WL, Thiele KR, and Prober SM (2018) \r\nA conceptual model of vegetation dynamics \r\nfor the unique obligate-seeder eucalypt \r\nwoodlands of south-western Australia. \r\nAustral Ecology, 43, pp. 681-695. \r\n\r\nProber SM, Yuen E, O’Connor M, and Schultz L \r\n(2016) Ngadju kala: Australian Aboriginal fire \r\nknowledge in the Great Western Woodlands. \r\nAustral Ecology, 41, pp. 716-732. \r\n\r\nProber SM, Gosper CR, Gilfedder L, Harwood TD, \r\nThiele KR, Williams KJ, and Yates CJ (2017) \r\nTemperate eucalypt Woodlands. In Australian \r\nVegetation 3rd Edition (ed. DA Keith), pp. \r\n410-437. Cambridge University Press, \r\nCambridge.\r\n",
+    "hasExpression" : [ "aemf:e3.34", "aemf:e3.31", "aemf:e3.33", "aemf:e3.32", "aemf:e99.99" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "definition" : "Obligate-seeder eucalypt species, i.e., those which \r\nare easily killed by fire and regenerate \r\npredominantly from seed, form extensive \r\nwoodlands in dry to semi-arid (200-700 mm mean \r\nannual rainfall) south-western Western Australia \r\n(Prober et al. 2017, Gosper et al. 2018). These trees, \r\nincluding about fifty eucalypt species (e.g., \r\nEucalyptus salubris, E. salmonophloia and E. \r\nvittata), lack well-protected epicormic buds, limiting \r\ntheir ability to resprout.  \r\nConsistent with this lack of resprouting after fire, \r\nlocal Aboriginal knowledge indicates that systematic \r\nAboriginal burning was uncommon in these \r\nwoodlands (Prober et al. 2016). Rather the \r\npredominant fire regime is characterised by very \r\ninfrequent, intense wildfires that typically initiate \r\nmass seedling stand replacement (Gosper et al. \r\n2018). This results in post-disturbance vegetation \r\nlargely comprising a single-aged tree cohort. \r\nHowever, smaller scale disturbances such as storms, \r\nindividual tree mortality, localised lightning strikes \r\nor floods, can lead to mixed-age stands. The \r\nunderstorey in Obligate-seeder eucalypt woodlands \r\nis typically shrubby, variously dominated by \r\nMelaleuca, Eremophila, Maireana or Atriplex \r\nspecies. Grasses and forbs contribute to plant \r\ndiversity, but their cover is low in most seasons. The \r\narchetype model for the Obligate-seeder eucalypt \r\nwoodlands (Figure 3) is drawn from Gosper et al. \r\n(2018), which includes an extensive bibliography \r\nthat can provide further information and details on \r\nspecific attributes of these woodlands. ",
+    "notation" : "3.3",
+    "prefLabel" : "Obligate-seeder eucalypt woodlands"
+  }, {
+    "@id" : "aemf:a3.4",
+    "hasExpression" : [ "aemf:e3.43", "aemf:e3.42", "aemf:e3.41" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "3.4",
+    "prefLabel" : "Resprouter temperate eucalypt woodland with heathy understorey"
+  }, {
+    "@id" : "aemf:a3.5",
+    "hasExpression" : [ "aemf:e3.55", "aemf:e3.54", "aemf:e3.53", "aemf:e3.52", "aemf:e3.51" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "3.5",
+    "prefLabel" : "Wet-dry tropical eucalypt woodlands and forests"
+  }, {
+    "@id" : "aemf:a3.6",
+    "hasExpression" : [ "aemf:e3.62", "aemf:e3.61" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "3.6",
+    "prefLabel" : "Sub-alpine resprouter eucalypt woodlands"
+  }, {
+    "@id" : "aemf:a4.1",
+    "hasExpression" : "aemf:e4.12",
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "4.1",
+    "prefLabel" : "Brigalow-type"
+  }, {
+    "@id" : "aemf:a4.2",
+    "hasExpression" : [ "aemf:e4.22", "aemf:e4.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "4.2",
+    "prefLabel" : "Gidgee-type"
+  }, {
+    "@id" : "aemf:a4.3",
+    "hasExpression" : [ "aemf:e4.32", "aemf:e4.31" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "4.3",
+    "prefLabel" : "Lancewood-type"
+  }, {
+    "@id" : "aemf:a4.4",
+    "hasExpression" : [ "aemf:e4.43", "aemf:e4.42", "aemf:e4.41" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "4.4",
+    "prefLabel" : "Mulga-type"
+  }, {
+    "@id" : "aemf:a4.5",
+    "hasExpression" : "aemf:e4.52",
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "4.5",
+    "prefLabel" : "Myall/ blackwood-type"
+  }, {
+    "@id" : "aemf:a4.6",
+    "hasExpression" : [ "aemf:e4.62", "aemf:e4.61" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "4.6",
+    "prefLabel" : "Pindan-type"
+  }, {
+    "@id" : "aemf:a4.7",
+    "hasExpression" : [ "aemf:e4.72", "aemf:e4.71" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "4.7",
+    "prefLabel" : "Sandy soil Acacia shrubland-type"
+  }, {
+    "@id" : "aemf:a5.1",
+    "hasExpression" : [ "aemf:e5.14", "aemf:e5.13", "aemf:e5.12", "aemf:e5.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "5.1",
+    "prefLabel" : "Fire-intolerant Callitris woodlands"
+  }, {
+    "@id" : "aemf:a6.1",
+    "hasExpression" : [ "aemf:e6.13", "aemf:e6.12" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "6.1",
+    "prefLabel" : "Littoral dune Casuarina woodlands"
+  }, {
+    "@id" : "aemf:a6.2",
+    "hasExpression" : [ "aemf:e6.25", "aemf:e6.22", "aemf:e6.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "6.2",
+    "prefLabel" : "Pulse-disturbance rainfall driven Casuarina woodlands"
+  }, {
+    "@id" : "aemf:a6.3",
+    "hasExpression" : [ "aemf:e6.34", "aemf:e6.33" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "6.3",
+    "prefLabel" : "Riverine Casuarina woodlands"
+  }, {
+    "@id" : "aemf:a6.4",
+    "hasExpression" : "aemf:e6.43",
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "6.4",
+    "prefLabel" : "Swamp Oaks"
+  }, {
+    "@id" : "aemf:a7.1",
+    "hasExpression" : [ "aemf:e7.14", "aemf:e7.12", "aemf:e7.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "7.1",
+    "prefLabel" : "Very wet Melaleuca forests"
+  }, {
+    "@id" : "aemf:a7.2",
+    "hasExpression" : [ "aemf:e7.30", "aemf:e7.29", "aemf:e7.24", "aemf:e7.23", "aemf:e7.22", "aemf:e7.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "7.2",
+    "prefLabel" : "Wet-dry Melaleuca forest"
+  }, {
+    "@id" : "aemf:a8.1",
+    "hasExpression" : [ "aemf:e8.14", "aemf:e8.13", "aemf:e8.12", "aemf:e8.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "8.1",
+    "prefLabel" : "Chenopod/Tussock grass mallee"
+  }, {
+    "@id" : "aemf:a8.2",
+    "hasExpression" : [ "aemf:e8.25", "aemf:e8.24", "aemf:e8.23", "aemf:e8.22" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "8.2",
+    "prefLabel" : "Shrubby/ Triodia mallee"
+  }, {
+    "@id" : "aemf:a8.3",
+    "hasExpression" : [ "aemf:e8.35", "aemf:e8.34", "aemf:e8.33", "aemf:e8.32" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "8.3",
+    "prefLabel" : "Maalok"
+  }, {
+    "@id" : "aemf:a8.4",
+    "hasExpression" : [ "aemf:e8.44", "aemf:e8.43", "aemf:e8.42", "aemf:e8.41" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "8.4",
+    "prefLabel" : "Mesic heathy mallee"
+  }, {
+    "@id" : "aemf:a9.1",
+    "hasExpression" : [ "aemf:e9.14", "aemf:e9.12", "aemf:e9.11" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "9.1",
+    "prefLabel" : "Arid heath"
+  }, {
+    "@id" : "aemf:a9.2",
+    "hasExpression" : [ "aemf:e9.27", "aemf:e9.26", "aemf:e9.25", "aemf:e9.24", "aemf:e9.21" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "9.2",
+    "prefLabel" : "Coastal heath"
+  }, {
+    "@id" : "aemf:a9.3",
+    "hasExpression" : [ "aemf:e9.34", "aemf:e9.33", "aemf:e9.32" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "9.3",
+    "prefLabel" : "Dry alpine heath"
+  }, {
+    "@id" : "aemf:a9.6",
+    "hasExpression" : [ "aemf:e9.63", "aemf:e9.62", "aemf:e9.61" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "9.6",
+    "prefLabel" : "Wet alpine heath"
+  }, {
+    "@id" : "aemf:a9.7",
+    "hasExpression" : [ "aemf:e9.73", "aemf:e9.72", "aemf:e9.71" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "9.7",
+    "prefLabel" : "Wet lowland heath"
+  }, {
+    "@id" : "aemf:a9.8",
+    "hasExpression" : [ "aemf:e9.84", "aemf:e9.83", "aemf:e9.82", "aemf:e9.81" ],
+    "rdf:type" : {
+      "@id" : "emfo:Archetype"
+    },
+    "notation" : "9.8",
+    "prefLabel" : "Sandplain shrublands"
+  }, {
+    "@id" : "aemf:e1.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "1.11",
+    "prefLabel" : "Littoral rainforest & coastal vine thicket"
+  }, {
+    "@id" : "aemf:e1.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "1.12",
+    "prefLabel" : "Patchy rainforest with secondary canopy"
+  }, {
+    "@id" : "aemf:e1.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "1.13",
+    "prefLabel" : "Beach or sea floor"
+  }, {
+    "@id" : "aemf:e1.16",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "1.16",
+    "prefLabel" : "Cyclone-impacted littoral rain forest"
+  }, {
+    "@id" : "aemf:e1.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "1.21",
+    "prefLabel" : "Rainforest and vine thicket (wet/dry/semi-deciduous)"
+  }, {
+    "@id" : "aemf:e1.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "1.23",
+    "prefLabel" : "Rainforest and vine thicket (very wet /evergreen)"
+  }, {
+    "@id" : "aemf:e1.24",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "1.24",
+    "prefLabel" : "Cyclone scrub (wind disturbed rainforest and vine thicket)"
+  }, {
+    "@id" : "aemf:e10.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.11",
+    "prefLabel" : "Alpine grassland"
+  }, {
+    "@id" : "aemf:e10.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.12",
+    "prefLabel" : "Alpine grasslands with interspersed shrubs"
+  }, {
+    "@id" : "aemf:e10.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.22",
+    "prefLabel" : "Beach spinifex grassland"
+  }, {
+    "@id" : "aemf:e10.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.23",
+    "prefLabel" : "Wave zone"
+  }, {
+    "@id" : "aemf:e10.31",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.31",
+    "prefLabel" : "Temperate mesic grassland"
+  }, {
+    "@id" : "aemf:e10.32",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.32",
+    "prefLabel" : "Depauperate temperate mesic grassland"
+  }, {
+    "@id" : "aemf:e10.41",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.41",
+    "prefLabel" : "Annual grasses and forbs dominate"
+  }, {
+    "@id" : "aemf:e10.42",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.42",
+    "prefLabel" : "Perennial-dominated tussock grassland"
+  }, {
+    "@id" : "aemf:e10.43",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.43",
+    "prefLabel" : "Low ground-cover"
+  }, {
+    "@id" : "aemf:e10.44",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "10.44",
+    "prefLabel" : "Dry woodland, with perennial grasses"
+  }, {
+    "@id" : "aemf:e11.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "11.11",
+    "prefLabel" : "Connected hummock grassland"
+  }, {
+    "@id" : "aemf:e11.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "11.12",
+    "prefLabel" : "Bare ground"
+  }, {
+    "@id" : "aemf:e11.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "11.13",
+    "prefLabel" : "Young hummock grassland"
+  }, {
+    "@id" : "aemf:e11.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "11.14",
+    "prefLabel" : "Intermediate-aged hummock grassland"
+  }, {
+    "@id" : "aemf:e11.15",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "11.15",
+    "prefLabel" : "Open hummock grassland"
+  }, {
+    "@id" : "aemf:e12.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "12.11",
+    "prefLabel" : "Permanent wet"
+  }, {
+    "@id" : "aemf:e12.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "12.12",
+    "prefLabel" : "Permanent dry"
+  }, {
+    "@id" : "aemf:e12.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "12.13",
+    "prefLabel" : "Semi-permanent wet"
+  }, {
+    "@id" : "aemf:e12.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "12.14",
+    "prefLabel" : "Semi-permanent dry"
+  }, {
+    "@id" : "aemf:e12.15",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "12.15",
+    "prefLabel" : "Temporary wet"
+  }, {
+    "@id" : "aemf:e12.16",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "12.16",
+    "prefLabel" : "Temporary dry"
+  }, {
+    "@id" : "aemf:e13.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.11",
+    "prefLabel" : "Seagrass beds"
+  }, {
+    "@id" : "aemf:e13.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.12",
+    "prefLabel" : "Ocean floor"
+  }, {
+    "@id" : "aemf:e13.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.13",
+    "prefLabel" : "Unvegetated marsh"
+  }, {
+    "@id" : "aemf:e13.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.14",
+    "prefLabel" : "Zonal saltmarsh/ saltpan community"
+  }, {
+    "@id" : "aemf:e13.16",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e13.21",
+    "notation" : "13.16",
+    "prefLabel" : "Zonal mangrove forest"
+  }, {
+    "@id" : "aemf:e13.17",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.17",
+    "prefLabel" : "Mudflat"
+  }, {
+    "@id" : "aemf:e13.18",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.18",
+    "prefLabel" : "Damaged mangrove forest"
+  }, {
+    "@id" : "aemf:e13.19",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.19",
+    "prefLabel" : "Severely damaged (dieback) mangrove forest"
+  }, {
+    "@id" : "aemf:e13.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e13.16",
+    "notation" : "13.21",
+    "prefLabel" : "Zonal mangrove forest"
+  }, {
+    "@id" : "aemf:e13.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.22",
+    "prefLabel" : "Dieback mangrove forest"
+  }, {
+    "@id" : "aemf:e13.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "13.23",
+    "prefLabel" : "Rocky shoreline, mudflat, chenopond shrubland"
+  }, {
+    "@id" : "aemf:e14.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "14.13",
+    "prefLabel" : "Mixed-age chenopod shrubland"
+  }, {
+    "@id" : "aemf:e14.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e9.83",
+    "notation" : "14.14",
+    "prefLabel" : "Sparse shrubland"
+  }, {
+    "@id" : "aemf:e14.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "14.21",
+    "prefLabel" : "Dry succulent samphire shrublands/ salt lake"
+  }, {
+    "@id" : "aemf:e14.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "14.22",
+    "prefLabel" : "Diverse salt lake system"
+  }, {
+    "@id" : "aemf:e14.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "14.23",
+    "prefLabel" : "Ephemeral salt lake"
+  }, {
+    "@id" : "aemf:e15.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "15.11",
+    "prefLabel" : "Typical lowland stream"
+  }, {
+    "@id" : "aemf:e15.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "15.12",
+    "prefLabel" : "Flooded lowland stream"
+  }, {
+    "@id" : "aemf:e15.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "15.13",
+    "prefLabel" : "Drought-impacted lowland stream"
+  }, {
+    "@id" : "aemf:e16.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "16.11",
+    "prefLabel" : "NA expression"
+  }, {
+    "@id" : "aemf:e2.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.13",
+    "prefLabel" : "Swamp sclerophyll forest on waterlogged / periodically inundated alluvial flats / heavy soils"
+  }, {
+    "@id" : "aemf:e2.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.21",
+    "prefLabel" : "Mature tall obligate-seeder eucalypt forest"
+  }, {
+    "@id" : "aemf:e2.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.22",
+    "prefLabel" : "Regenerating pole obligate-seeder eucalypt stands"
+  }, {
+    "@id" : "aemf:e2.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.23",
+    "prefLabel" : "Seedling to sapling obligate-seeder eucalypts"
+  }, {
+    "@id" : "aemf:e2.26",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.26",
+    "prefLabel" : "Humid Acacia dominated shrubland, woodlands and forests"
+  }, {
+    "@id" : "aemf:e2.27",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e2.36",
+    "notation" : "2.27",
+    "prefLabel" : "Mixed forest with rainforest understorey and eucalypt overstorey"
+  }, {
+    "@id" : "aemf:e2.31",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.31",
+    "prefLabel" : "Mature eucalypt forests"
+  }, {
+    "@id" : "aemf:e2.32",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.32",
+    "prefLabel" : "Resprouting eucalypt forests"
+  }, {
+    "@id" : "aemf:e2.33",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.33",
+    "prefLabel" : "Recolonising eucalypt forests"
+  }, {
+    "@id" : "aemf:e2.34",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.34",
+    "prefLabel" : "Reduced canopy forests"
+  }, {
+    "@id" : "aemf:e2.35",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "2.35",
+    "prefLabel" : "Non-eucalypt vegetation"
+  }, {
+    "@id" : "aemf:e2.36",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e2.27",
+    "notation" : "2.36",
+    "prefLabel" : "Mixed forest with rainforest understorey and eucalypt overstorey"
+  }, {
+    "@id" : "aemf:e3.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.11",
+    "prefLabel" : "Grassy woodland with pulsed recruitment"
+  }, {
+    "@id" : "aemf:e3.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.12",
+    "prefLabel" : "Eucalypt woodlands with a grassy understorey"
+  }, {
+    "@id" : "aemf:e3.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.13",
+    "prefLabel" : "Eucalypt-native pine woodland"
+  }, {
+    "@id" : "aemf:e3.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.14",
+    "prefLabel" : "Eucalypt woodland with a shrub/grass understorey"
+  }, {
+    "@id" : "aemf:e3.15",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.15",
+    "prefLabel" : "Eucalypt woodland with she-oaks or shrub-dominated understorey"
+  }, {
+    "@id" : "aemf:e3.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.21",
+    "prefLabel" : "Dense seedling eucalypts"
+  }, {
+    "@id" : "aemf:e3.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.22",
+    "prefLabel" : "Dense pole-stage eucalypt stands"
+  }, {
+    "@id" : "aemf:e3.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.23",
+    "prefLabel" : "Mature floodplain eucalypt forest/woodland"
+  }, {
+    "@id" : "aemf:e3.24",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.24",
+    "prefLabel" : "Reduced tree canopy"
+  }, {
+    "@id" : "aemf:e3.31",
+    "toPathway" : [ "aemf:e3.31-e3.32", "aemf:e3.31-e99.99" ],
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "definition" : "Fire, drought, flood, and intense wind-throw can kill \r\nlarge stands of adult trees. This is followed by dense \r\nseedling recruitment, leading to a landscape \r\ndominated by recruiting individuals, sometimes \r\nwith scattered surviving mature trees. After fire, \r\nplant species richness is high, reflecting fire\r\nstimulated recruitment from persistent seedbanks \r\nof many species (Image 1). Over several decades, \r\nthis state will shift to a Dense sapling stand. ",
+    "notation" : "3.31",
+    "prefLabel" : "Recruiting woodland"
+  }, {
+    "@id" : "aemf:e3.31-e3.32",
+    "dueToPressure" : "aemf:Time_15-40_years",
+    "toState" : "aemf:e3.32",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.31-e99.99",
+    "dueToPressure" : "aemf:Repeat_fire_flood_or_storm",
+    "toState" : "aemf:e99.99",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    },
+    "definition" : "If young obligate-seeder woodlands are burnt again \r\ntoo soon after a fire, there is likely to be limited \r\nseed supply for dense seedling recruitment. In\r\nextreme cases this could result in local loss of the \r\neucalypt overstorey, resulting in a shift to other \r\necosystem types.  \r\nThis shift has not been well documented but could \r\ninclude the shift to chenopod shrubland in areas of \r\nchenopod-dominant understorey, or mallee where \r\nmallee was already present. "
+  }, {
+    "@id" : "aemf:e3.32",
+    "toPathway" : [ "aemf:e3.32-e3.33", "aemf:e3.32-e99.99", "aemf:e3.32-e3.31" ],
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "definition" : "As the small seedling eucalypts grow, intra-specific \r\ncompetition sets in, resulting in a Dense sapling \r\nstand with reduced individual growth rates (Image \r\n2). New eucalypt recruits are absent, but canopy \r\nseed bank development commences typically 15-20 \r\nyears after a fire. By 25-50 years post fire, \r\napproximately 50% of trees are reproductively \r\nmature. Overall native ground layer plant diversity \r\ndeclines as a result of strong competition from the \r\ndominant eucalypts and shrubs suppressing \r\ndiversity. As illustrated in the model, a fire during \r\nthis stage would cause a shift to a Recruiting \r\nwoodland. Without further disturbance, the Dense \r\nsapling stand would shift to a Mature stand lacking \r\ninter-fire eucalypt recruits. ",
+    "notation" : "3.32",
+    "prefLabel" : "Dense sapling stand"
+  }, {
+    "@id" : "aemf:e3.32-e3.31",
+    "dueToPressure" : "aemf:Fire_or_flood",
+    "toState" : "aemf:e3.31",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.32-e3.33",
+    "dueToPressure" : "aemf:Time_150_years",
+    "toState" : "aemf:e3.33",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.32-e99.99",
+    "dueToPressure" : "aemf:Repeat_fire_flood_or_storm",
+    "toState" : "aemf:e99.99",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    },
+    "definition" : "If young obligate-seeder woodlands are burnt again \r\ntoo soon after a fire, there is likely to be limited \r\nseed supply for dense seedling recruitment. In\r\nextreme cases this could result in local loss of the \r\neucalypt overstorey, resulting in a shift to other \r\necosystem types.  \r\nThis shift has not been well documented but could \r\ninclude the shift to chenopod shrubland in areas of \r\nchenopod-dominant understorey, or mallee where \r\nmallee was already present. "
+  }, {
+    "@id" : "aemf:e3.33",
+    "toPathway" : [ "aemf:e3.33-e3.33", "aemf:e3.33-e3.34", "aemf:e3.33-e3.31" ],
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "definition" : "If there are no major or localised disturbances \r\nwithin 150 years since fire, the woodland \r\ncommunity develops to a stand of large trees of a \r\nlargely single-aged cohort (Image 3). Tree density \r\nwill be substantially lower than in Recruiting \r\nwoodland or Dense sapling stands as a result of \r\nnatural thinning processes over time.  \r\n\r\nWithin this mature aged stand an extensive canopy \r\nseed bank is maintained, and overall plant species \r\nrichness is relatively high and increasing, with \r\nunderstorey taxa able to recruit in suitable low\r\ncompetition microsites (Image 4). A major \r\ndisturbance would cause a rapid shift to a Recruiting \r\nwoodland, while localised disturbances would cause \r\nthe gradual development of a Mature stand with \r\ninter-fire eucalypt recruits. ",
+    "notation" : "3.33",
+    "prefLabel" : "Mature stand lacking inter-fire eucalypt recruits"
+  }, {
+    "@id" : "aemf:e3.33-e3.31",
+    "dueToPressure" : "aemf:Fire_flood_storm",
+    "toState" : "aemf:e3.31",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.33-e3.33",
+    "dueToPressure" : "aemf:Ongoing_time_no_major_or_localized_disturbances",
+    "toState" : "aemf:e3.33",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.33-e3.34",
+    "dueToPressure" : "aemf:Localised_disturbance_250_years",
+    "toState" : "aemf:e3.34",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.34",
+    "toPathway" : [ "aemf:e3.34-e3.34", "aemf:e3.34-e3.31" ],
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "definition" : "This woodland state can occur when small patches \r\nof eucalypt recruits develop and grow in localised \r\ncanopy/root zone gaps following the death of some \r\nmature trees. This will then increase the age\r\ndiversity of stands and understorey species richness \r\nas trees age and thin with stands becoming \r\nincreasingly open, supporting a diversity of \r\nherbaceous and shrubby understorey species. This \r\nstate can persist indefinitely, but a major \r\ndisturbance would cause a rapid shift to a Recruiting \r\nwoodland.  ",
+    "notation" : "3.34",
+    "prefLabel" : "Mature stand with inter-fire eucalypt recruits"
+  }, {
+    "@id" : "aemf:e3.34-e3.31",
+    "dueToPressure" : "aemf:Fire_flood_storm",
+    "toState" : "aemf:e3.31",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.34-e3.34",
+    "dueToPressure" : "aemf:Ongoing_intermittent_gap-phase_recruitment",
+    "toState" : "aemf:e3.34",
+    "rdf:type" : {
+      "@id" : "emfo:Pathway"
+    }
+  }, {
+    "@id" : "aemf:e3.41",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.41",
+    "prefLabel" : "Heathy woodland (/shrubland) with depauperate understorey"
+  }, {
+    "@id" : "aemf:e3.42",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.42",
+    "prefLabel" : "Heathy woodland with diverse shrub/sedge understorey"
+  }, {
+    "@id" : "aemf:e3.43",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.43",
+    "prefLabel" : "Heathland with basally-resprouting eucalypts"
+  }, {
+    "@id" : "aemf:e3.51",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.51",
+    "prefLabel" : "Mixed-size resprouting woodland"
+  }, {
+    "@id" : "aemf:e3.52",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.52",
+    "prefLabel" : "Mixed-age tropical woodland"
+  }, {
+    "@id" : "aemf:e3.53",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.53",
+    "prefLabel" : "Bimodal woodland"
+  }, {
+    "@id" : "aemf:e3.54",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.54",
+    "prefLabel" : "Old shrubby woodland"
+  }, {
+    "@id" : "aemf:e3.55",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.55",
+    "prefLabel" : "Drought-affected woodland"
+  }, {
+    "@id" : "aemf:e3.61",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.61",
+    "prefLabel" : "Sub-alpine eucalypt woodlands with a grassy understorey"
+  }, {
+    "@id" : "aemf:e3.62",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "3.62",
+    "prefLabel" : "Sub-alpine eucalypt woodlands with a shrub understorey"
+  }, {
+    "@id" : "aemf:e4.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.12",
+    "prefLabel" : "Brigalow"
+  }, {
+    "@id" : "aemf:e4.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e4.32",
+    "notation" : "4.21",
+    "prefLabel" : "Drought-impacted acacia woodlands"
+  }, {
+    "@id" : "aemf:e4.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.22",
+    "prefLabel" : "Acacia cambagei, A georginae (gidgee) dominant woodlands"
+  }, {
+    "@id" : "aemf:e4.31",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.31",
+    "prefLabel" : "Acaia shirleyi (lancewood) dominant woodlands"
+  }, {
+    "@id" : "aemf:e4.32",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e4.21",
+    "notation" : "4.32",
+    "prefLabel" : "Drought-impacted acacia woodlands"
+  }, {
+    "@id" : "aemf:e4.41",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.41",
+    "prefLabel" : "Mulga and grass"
+  }, {
+    "@id" : "aemf:e4.42",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.42",
+    "prefLabel" : "Tussock grass and young mulga"
+  }, {
+    "@id" : "aemf:e4.43",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.43",
+    "prefLabel" : "Grassy mulga"
+  }, {
+    "@id" : "aemf:e4.52",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.52",
+    "prefLabel" : "Myall/blackwood"
+  }, {
+    "@id" : "aemf:e4.61",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.61",
+    "prefLabel" : "WA Pindan vegetation"
+  }, {
+    "@id" : "aemf:e4.62",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.62",
+    "prefLabel" : "Open acacia woodland with grassy understorey"
+  }, {
+    "@id" : "aemf:e4.71",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.71",
+    "prefLabel" : "Sandy soil Acacia shrublands"
+  }, {
+    "@id" : "aemf:e4.72",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "4.72",
+    "prefLabel" : "Annual groundcover with regenerating shrubs"
+  }, {
+    "@id" : "aemf:e5.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "5.11",
+    "prefLabel" : "Mature stand with Callitris recruits"
+  }, {
+    "@id" : "aemf:e5.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "5.12",
+    "prefLabel" : "Patch-scale recruiting Callitris woodlands"
+  }, {
+    "@id" : "aemf:e5.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "5.13",
+    "prefLabel" : "Patch-scale dense sapling stand"
+  }, {
+    "@id" : "aemf:e5.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "5.14",
+    "prefLabel" : "Mature stand with no Callitris recruits"
+  }, {
+    "@id" : "aemf:e6.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.12",
+    "prefLabel" : "Mixed age Casuarina forest/woodlands on coastal dunes"
+  }, {
+    "@id" : "aemf:e6.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.13",
+    "prefLabel" : "Beach, ocean floor"
+  }, {
+    "@id" : "aemf:e6.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.21",
+    "prefLabel" : "Casuarina woodland shrubby expression"
+  }, {
+    "@id" : "aemf:e6.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.22",
+    "prefLabel" : "Casuarina woodland shrubby expression"
+  }, {
+    "@id" : "aemf:e6.25",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.25",
+    "prefLabel" : "Casuarina woodland grassy expression"
+  }, {
+    "@id" : "aemf:e6.33",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.33",
+    "prefLabel" : "Mixed-age Casuarina stand"
+  }, {
+    "@id" : "aemf:e6.34",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.34",
+    "prefLabel" : "Beach with few seedlings or river bed"
+  }, {
+    "@id" : "aemf:e6.43",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "6.43",
+    "prefLabel" : "Casuarina swamp oak forest"
+  }, {
+    "@id" : "aemf:e7.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.11",
+    "prefLabel" : "Melaleuca open forest with grass/sedge understorey"
+  }, {
+    "@id" : "aemf:e7.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.12",
+    "prefLabel" : "Mid-dense forest with rainforest/palm understorey"
+  }, {
+    "@id" : "aemf:e7.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.14",
+    "prefLabel" : "Mid-dense forest with dense melaleuca seedling/sapling layer"
+  }, {
+    "@id" : "aemf:e7.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.21",
+    "prefLabel" : "Melaleuca woodland with grass/forb understorey"
+  }, {
+    "@id" : "aemf:e7.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.22",
+    "prefLabel" : "Lowland woodland with dense Melaleuca sapling layer"
+  }, {
+    "@id" : "aemf:e7.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.23",
+    "prefLabel" : "Lowland woodland with dense Melaleuca midstorey layer"
+  }, {
+    "@id" : "aemf:e7.24",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.24",
+    "prefLabel" : "Mixed species woodland/shrubland with rainforest/semi-deciduous understorey"
+  }, {
+    "@id" : "aemf:e7.29",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.29",
+    "prefLabel" : "Sparse melaleuca woodland with Eucalypt emergents"
+  }, {
+    "@id" : "aemf:e7.30",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "7.30",
+    "prefLabel" : "Mixed species woodland/shrubland"
+  }, {
+    "@id" : "aemf:e8.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.11",
+    "prefLabel" : "Tussock grassland with resprouting mallee"
+  }, {
+    "@id" : "aemf:e8.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.12",
+    "prefLabel" : "Tussock grass mallee woodland "
+  }, {
+    "@id" : "aemf:e8.13",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.13",
+    "prefLabel" : "Chenopod shrubland / tussock grassland with resprouting mallee"
+  }, {
+    "@id" : "aemf:e8.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.14",
+    "prefLabel" : "Chenopod mallee woodland with tussock grassland"
+  }, {
+    "@id" : "aemf:e8.22",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.22",
+    "prefLabel" : "Depauperate Triodia grassland/shrubland with resprouting mallee"
+  }, {
+    "@id" : "aemf:e8.23",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.23",
+    "prefLabel" : "Depauperate Triodia /shrubby mallee woodland"
+  }, {
+    "@id" : "aemf:e8.24",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.24",
+    "prefLabel" : "Diverse Triodia / shrubby malle woodland"
+  }, {
+    "@id" : "aemf:e8.25",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.25",
+    "prefLabel" : "Diverse Triodia grassland/shrubland with resprouting mallee"
+  }, {
+    "@id" : "aemf:e8.32",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.32",
+    "prefLabel" : "Dense seedling Maalok"
+  }, {
+    "@id" : "aemf:e8.33",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.33",
+    "prefLabel" : "Mature multi-age Maalok"
+  }, {
+    "@id" : "aemf:e8.34",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.34",
+    "prefLabel" : "Mature even aged Maalok"
+  }, {
+    "@id" : "aemf:e8.35",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.35",
+    "prefLabel" : "Dense sapling Maalok"
+  }, {
+    "@id" : "aemf:e8.41",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.41",
+    "prefLabel" : "Diverse heathland with resprouting mallee"
+  }, {
+    "@id" : "aemf:e8.42",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.42",
+    "prefLabel" : "Diverse heathy mallee woodland"
+  }, {
+    "@id" : "aemf:e8.43",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.43",
+    "prefLabel" : "Depauperate heathy mallee woodland"
+  }, {
+    "@id" : "aemf:e8.44",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "8.44",
+    "prefLabel" : "Depauperate heathland with resprouting mallee"
+  }, {
+    "@id" : "aemf:e9.11",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e9.32",
+    "notation" : "9.11",
+    "prefLabel" : "Thicket"
+  }, {
+    "@id" : "aemf:e9.12",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e9.61",
+    "notation" : "9.12",
+    "prefLabel" : "Mixed age dry heath"
+  }, {
+    "@id" : "aemf:e9.14",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.14",
+    "prefLabel" : "Open dry heath"
+  }, {
+    "@id" : "aemf:e9.21",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.21",
+    "prefLabel" : "Coastal thicket"
+  }, {
+    "@id" : "aemf:e9.24",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.24",
+    "prefLabel" : "Open dunal coastal heath"
+  }, {
+    "@id" : "aemf:e9.25",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.25",
+    "prefLabel" : "Mixed-age dry coastal heath"
+  }, {
+    "@id" : "aemf:e9.26",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.26",
+    "prefLabel" : "Open dry coastal rocky heath"
+  }, {
+    "@id" : "aemf:e9.27",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.27",
+    "prefLabel" : "rock"
+  }, {
+    "@id" : "aemf:e9.32",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e9.11",
+    "notation" : "9.32",
+    "prefLabel" : "Thicket"
+  }, {
+    "@id" : "aemf:e9.33",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.33",
+    "prefLabel" : "Mixed age dry alpine heath"
+  }, {
+    "@id" : "aemf:e9.34",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.34",
+    "prefLabel" : "Open dry alpine heath"
+  }, {
+    "@id" : "aemf:e9.61",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e9.12",
+    "notation" : "9.61",
+    "prefLabel" : "Mixed age dry heath"
+  }, {
+    "@id" : "aemf:e9.62",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.62",
+    "prefLabel" : "Mixed age wet heath"
+  }, {
+    "@id" : "aemf:e9.63",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.63",
+    "prefLabel" : "Open wet heath"
+  }, {
+    "@id" : "aemf:e9.71",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.71",
+    "prefLabel" : "Wet heath"
+  }, {
+    "@id" : "aemf:e9.72",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.72",
+    "prefLabel" : "Wet-dry heath"
+  }, {
+    "@id" : "aemf:e9.73",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.73",
+    "prefLabel" : "Shrubby wet-dry heath"
+  }, {
+    "@id" : "aemf:e9.81",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.81",
+    "prefLabel" : "Long undisturbed shrubland"
+  }, {
+    "@id" : "aemf:e9.82",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.82",
+    "prefLabel" : "Diverse shrubland"
+  }, {
+    "@id" : "aemf:e9.83",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "sameAs" : "aemf:e14.14",
+    "notation" : "9.83",
+    "prefLabel" : "Sparse shrubland"
+  }, {
+    "@id" : "aemf:e9.84",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "notation" : "9.84",
+    "prefLabel" : "Depauperate shrubland"
+  }, {
+    "@id" : "aemf:e99.99",
+    "rdf:type" : {
+      "@id" : "emfo:State"
+    },
+    "prefLabel" : "Alternative community"
+  }, {
+    "@id" : "aemf:u1",
+    "hasArchetype" : [ "aemf:a1.2", "aemf:a1.1" ],
+    "related-mvg" : "aemf:MVG1",
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "1",
+    "prefLabel" : "Rainforests and Vine thickets"
+  }, {
+    "@id" : "aemf:u10",
+    "hasArchetype" : [ "aemf:a10.4", "aemf:a10.3", "aemf:a10.2", "aemf:a10.1" ],
+    "related-mvg" : [ "aemf:MVG21", "aemf:MVG19" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "10",
+    "prefLabel" : "Tussock Grasslands"
+  }, {
+    "@id" : "aemf:u11",
+    "hasArchetype" : "aemf:a11.1",
+    "related-mvg" : "aemf:MVG20",
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "11",
+    "prefLabel" : "Hummock Grasslands"
+  }, {
+    "@id" : "aemf:u12",
+    "hasArchetype" : "aemf:a12.1",
+    "related-mvg" : "aemf:MVG21",
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "12",
+    "prefLabel" : "Sedgelands, Rushlands and Herblands"
+  }, {
+    "@id" : "aemf:u13",
+    "hasArchetype" : [ "aemf:a13.2", "aemf:a13.1" ],
+    "related-mvg" : [ "aemf:MVG23", "aemf:MVG22" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "13",
+    "prefLabel" : "Mangroves and Samphire Shrublands"
+  }, {
+    "@id" : "aemf:u14",
+    "hasArchetype" : [ "aemf:a14.2", "aemf:a14.1" ],
+    "related-mvg" : "aemf:MVG22",
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "14",
+    "prefLabel" : "Chenopod Shrublands"
+  }, {
+    "@id" : "aemf:u15",
+    "hasArchetype" : "aemf:a15.1",
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "15",
+    "prefLabel" : "In-channel aquatic systems"
+  }, {
+    "@id" : "aemf:u16",
+    "hasArchetype" : "aemf:a16.1",
+    "related-mvg" : [ "aemf:MVG15", "aemf:MVG10" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "16",
+    "prefLabel" : "Other"
+  }, {
+    "@id" : "aemf:u2",
+    "hasArchetype" : [ "aemf:a2.3", "aemf:a2.2", "aemf:a2.1" ],
+    "related-mvg" : [ "aemf:MVG4", "aemf:MVG3", "aemf:MVG2" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "2",
+    "prefLabel" : "Eucalypt forests"
+  }, {
+    "@id" : "aemf:u3",
+    "source" : "NVIS Technical Working Group (2018) Australian \r\nVegetation Attribute Manual, National \r\nVegetation Information System, Version 7.0. \r\nAustralian Government Department of the \r\nEnvironment and Heritage, Canberra. \r\nRichards AE, van Etten E, Friedel M, Nano CEM, \r\nPavey C, Rogers D, Schlesinger C, Schubert \r\nAT, Watson I, and Wright BR (In Prep) The \r\nAustralian Ecosystems Model Framework: \r\nHummock grasslands, Version 1.0. CSIRO, \r\nAustralia.",
+    "hasArchetype" : [ "aemf:a3.6", "aemf:a3.2", "aemf:a3.5", "aemf:a3.1", "aemf:a3.4", "aemf:a3.3" ],
+    "related-mvg" : [ "aemf:MVG5", "aemf:MVG12", "aemf:MVG11" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "definition" : "The ‘Eucalypt woodland’ umbrella group reflects the \r\nconcepts of the NVIS (2018) Major Vegetation \r\nGroups MVG5 (Eucalypt woodlands), MVG11 \r\n(Eucalypt open woodlands), and MVG 12 (Tropical \r\neucalypt woodlands).  \r\nSix key woodland types with differing disturbance \r\ndynamics can be identified within this umbrella \r\ngroup (Figure 2). The first major distinction is \r\nbetween ‘Eucalypt woodlands’ dominated by non\r\nresprouter, obligate-seeder eucalypts characterised \r\nby a regime of very infrequent intense fires \r\n(Obligate-seeder eucalypt woodlands), and the \r\nother five woodland types which are dominated by \r\nthe more common resprouter eucalypts.  \r\nFive distinct dynamics are recognised within this \r\nlatter resprouter eucalypt woodland group. First, \r\nWet-dry tropical eucalypt woodlands and forests are \r\ndistinguished from the other four ‘Eucalypt \r\nwoodlands’, for their dynamics related to regular \r\nseasonal drought (wet-dry tropics) and frequent, \r\nlow intensity fire. \r\nThe remaining four ‘Eucalypt woodlands’ include \r\nthe Inland floodplain eucalypt woodlands and \r\nforests with dynamics shaped by spatial and \r\ntemporal variability in surface and groundwater \r\navailability, and three dryland temperate and sub\r\ntropical eucalypt woodland types. Of these latter \r\nthree woodlands, the group Resprouter temperate \r\neucalypt woodland with heathy understorey \r\nrepresents more coastward, nutrient-poor \r\nwoodlands with understorey dynamics that are \r\nsimilar to heathlands. The second group, Lowland \r\nresprouter temperate and subtropical shrub-grass \r\neucalypt woodlands represent somewhat \r\nintegrating woodland types with grass– to shrub\r\ndominated understorey. These typically occur inland \r\nalong a gradient from higher to lower ecosystem \r\nproductivity, and the shrub to grass ratio can \r\nincrease with decreasing fire. Finally, the Sub-alpine \r\nresprouter eucalypt woodlands represent the high \r\nelevation eucalypt woodlands. Fire regulates the \r\nshrub-grass balance in these woodlands as well, but \r\nwith fire promoting rather than suppressing shrubs. \r\nEcosystem dynamic models for each of these groups \r\nare detailed below.  \r\nSee also: ‘Hummock grasslands’ booklet (Richards et \r\nal, In Prep) for related archetype model for \r\nHummock grassland with sparse eucalypt or other \r\nwoody overstorey. ",
+    "notation" : "3",
+    "prefLabel" : "Eucalypt woodlands"
+  }, {
+    "@id" : "aemf:u4",
+    "hasArchetype" : [ "aemf:a4.1", "aemf:a4.7", "aemf:a4.6", "aemf:a4.3", "aemf:a4.5", "aemf:a4.2", "aemf:a4.4" ],
+    "related-mvg" : [ "aemf:MVG16", "aemf:MVG6", "aemf:MVG13", "aemf:MVG15" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "4",
+    "prefLabel" : "Acacia Woodlands and Shrublands"
+  }, {
+    "@id" : "aemf:u5",
+    "hasArchetype" : "aemf:a5.1",
+    "related-mvg" : "aemf:MVG7",
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "5",
+    "prefLabel" : "Callitris Forests and Woodlands"
+  }, {
+    "@id" : "aemf:u6",
+    "hasArchetype" : [ "aemf:a6.2", "aemf:a6.3", "aemf:a6.4", "aemf:a6.1" ],
+    "related-mvg" : [ "aemf:MVG15", "aemf:MVG8", "aemf:MVG31" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "6",
+    "prefLabel" : "Casuarina  Forests and Woodlands"
+  }, {
+    "@id" : "aemf:u7",
+    "hasArchetype" : [ "aemf:a7.2", "aemf:a7.1" ],
+    "related-mvg" : [ "aemf:MVG9", "aemf:MVG17", "aemf:MVG15" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "7",
+    "prefLabel" : "Melaleuca Forests, Woodlands and Shrublands"
+  }, {
+    "@id" : "aemf:u8",
+    "hasArchetype" : [ "aemf:a8.4", "aemf:a8.3", "aemf:a8.2", "aemf:a8.1" ],
+    "related-mvg" : [ "aemf:MVG32", "aemf:MVG14" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "8",
+    "prefLabel" : "Mallee Woodlands and Shrublands"
+  }, {
+    "@id" : "aemf:u9",
+    "hasArchetype" : [ "aemf:a9.6", "aemf:a9.1", "aemf:a9.7", "aemf:a9.3", "aemf:a9.2", "aemf:a9.8" ],
+    "related-mvg" : [ "aemf:MVG18", "aemf:MVG17", "aemf:MVG15" ],
+    "rdf:type" : {
+      "@id" : "emfo:UmbrellaClass"
+    },
+    "notation" : "9",
+    "prefLabel" : "Shrublands (incl. heathlands)"
+  }, {
+    "@id" : "emfo:Archetype",
+    "@type" : "owl:Class",
+    "subClassOf" : "skos:Concept",
+    "prefLabel" : "Archetype model"
+  }, {
+    "@id" : "emfo:NVIS-MVG",
+    "@type" : "owl:Class",
+    "subClassOf" : "skos:Concept",
+    "prefLabel" : "NVIS Major Vegetation Group"
+  }, {
+    "@id" : "emfo:Pathway",
+    "@type" : "owl:Class",
+    "subClassOf" : [ "_:b0", "_:b1", "skos:Concept" ],
+    "prefLabel" : "Pathway"
+  }, {
+    "@id" : "emfo:Pressure",
+    "@type" : "owl:Class",
+    "subClassOf" : "skos:Concept",
+    "prefLabel" : "Ecosystem pressure type"
+  }, {
+    "@id" : "emfo:State",
+    "@type" : "owl:Class",
+    "subClassOf" : "skos:Concept",
+    "prefLabel" : "State"
+  }, {
+    "@id" : "emfo:Transition",
+    "@type" : "owl:Class",
+    "subClassOf" : "skos:Concept",
+    "prefLabel" : "Transition"
+  }, {
+    "@id" : "emfo:UmbrellaClass",
+    "@type" : "owl:Class",
+    "subClassOf" : "skos:Concept",
+    "prefLabel" : "Umbrella class"
+  }, {
+    "@id" : "emfo:dueToPressure",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:Pathway",
+    "range" : "emfo:Pressure",
+    "subPropertyOf" : "skos:related",
+    "prefLabel" : "due to ecosystem pressure"
+  }, {
+    "@id" : "emfo:fromPathway",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:State",
+    "range" : "emfo:Pathway",
+    "subPropertyOf" : "skos:related",
+    "inverseOf" : "emfo:toState",
+    "prefLabel" : "from pathway"
+  }, {
+    "@id" : "emfo:fromState",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:Pathway",
+    "range" : "emfo:State",
+    "subPropertyOf" : "skos:related",
+    "inverseOf" : "emfo:toPathway",
+    "prefLabel" : "previous state"
+  }, {
+    "@id" : "emfo:hasArchetype",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:UmbrellaClass",
+    "range" : "emfo:Archetype",
+    "subPropertyOf" : "skos:narrower",
+    "prefLabel" : "has Archetype"
+  }, {
+    "@id" : "emfo:hasExpression",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:Archetype",
+    "range" : "emfo:State",
+    "subPropertyOf" : "skos:narrower",
+    "prefLabel" : "has expression"
+  }, {
+    "@id" : "emfo:related-mvg",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:UmbrellaClass",
+    "range" : "emfo:NVIS-MVG",
+    "subPropertyOf" : "skos:relatedMatch",
+    "prefLabel" : "Link to NVIS Major Vegetation Group"
+  }, {
+    "@id" : "emfo:toPathway",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:State",
+    "range" : "emfo:Pathway",
+    "subPropertyOf" : "skos:related",
+    "inverseOf" : "emfo:fromState",
+    "prefLabel" : "to pathway"
+  }, {
+    "@id" : "emfo:toState",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "emfo:Pathway",
+    "range" : "emfo:State",
+    "subPropertyOf" : "skos:related",
+    "inverseOf" : "emfo:fromPathway",
+    "prefLabel" : "resulting state"
+  } ],
+  "@context" : {
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "hasExpression" : {
+      "@id" : "http://w3id.org/env/emf/ontology/hasExpression",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+      "@type" : "@id"
+    },
+    "related-mvg" : {
+      "@id" : "http://w3id.org/env/emf/ontology/related-mvg",
+      "@type" : "@id"
+    },
+    "hasArchetype" : {
+      "@id" : "http://w3id.org/env/emf/ontology/hasArchetype",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "toPathway" : {
+      "@id" : "http://w3id.org/env/emf/ontology/toPathway",
+      "@type" : "@id"
+    },
+    "toState" : {
+      "@id" : "http://w3id.org/env/emf/ontology/toState",
+      "@type" : "@id"
+    },
+    "dueToPressure" : {
+      "@id" : "http://w3id.org/env/emf/ontology/dueToPressure",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "allValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "isFormatOf" : {
+      "@id" : "http://purl.org/dc/terms/isFormatOf",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "aemf" : "http://w3id.org/env/aemf/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "emfo" : "http://w3id.org/env/emf/ontology/"
+  }
+}
