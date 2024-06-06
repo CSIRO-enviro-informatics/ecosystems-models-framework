@@ -38,9 +38,41 @@ aemf:Localised_disturbance_250_years
   a emfo:Pressure ;
   skos:prefLabel "Localised disturbance >~250 years" ;
 .
-aemf:MVG1
+aemf:MVG01
   a emfo:NVIS-MVG ;
   skos:prefLabel "Rainforests and Vine thickets" ;
+.
+aemf:MVG02
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Eucalypt Tall Open Forests" ;
+.
+aemf:MVG03
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Eucalypt Open Forests" ;
+.
+aemf:MVG04
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Eucalypt Low Open Forests" ;
+.
+aemf:MVG05
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Eucalypt woodlands" ;
+.
+aemf:MVG06
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Acacia Forests and Woodlands" ;
+.
+aemf:MVG07
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Callitris Forests and Woodlands" ;
+.
+aemf:MVG08
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Casuarina Forests and Woodlands" ;
+.
+aemf:MVG09
+  a emfo:NVIS-MVG ;
+  skos:prefLabel "Melaleuca Forests and Woodlands" ;
 .
 aemf:MVG10
   a emfo:NVIS-MVG ;
@@ -82,10 +114,6 @@ aemf:MVG19
   a emfo:NVIS-MVG ;
   skos:prefLabel "Tussock Grasslands" ;
 .
-aemf:MVG2
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Eucalypt Tall Open Forests" ;
-.
 aemf:MVG20
   a emfo:NVIS-MVG ;
   skos:prefLabel "Hummock Grasslands" ;
@@ -126,10 +154,6 @@ aemf:MVG29
   a emfo:NVIS-MVG ;
   skos:prefLabel "Regrowth, Modified Native Vegetation" ;
 .
-aemf:MVG3
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Eucalypt Open Forests" ;
-.
 aemf:MVG30
   a emfo:NVIS-MVG ;
   skos:prefLabel "Unclassified Forest" ;
@@ -141,30 +165,6 @@ aemf:MVG31
 aemf:MVG32
   a emfo:NVIS-MVG ;
   skos:prefLabel "Mallee Open Woodlands and Sparse Mallee Shrublands" ;
-.
-aemf:MVG4
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Eucalypt Low Open Forests" ;
-.
-aemf:MVG5
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Eucalypt woodlands" ;
-.
-aemf:MVG6
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Acacia Forests and Woodlands" ;
-.
-aemf:MVG7
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Callitris Forests and Woodlands" ;
-.
-aemf:MVG8
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Casuarina Forests and Woodlands" ;
-.
-aemf:MVG9
-  a emfo:NVIS-MVG ;
-  skos:prefLabel "Melaleuca Forests and Woodlands" ;
 .
 aemf:MVG99
   a emfo:NVIS-MVG ;
@@ -638,359 +638,357 @@ specific attributes of these woodlands. """ ;
   skos:prefLabel "Sandplain shrublands" ;
 .
 <http://w3id.org/env/aemf/e1.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "1.11" ;
   skos:prefLabel "Littoral rainforest & coastal vine thicket" ;
 .
 <http://w3id.org/env/aemf/e1.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "1.12" ;
   skos:prefLabel "Patchy rainforest with secondary canopy" ;
 .
 <http://w3id.org/env/aemf/e1.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "1.13" ;
   skos:prefLabel "Beach or sea floor" ;
 .
 <http://w3id.org/env/aemf/e1.16>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "1.16" ;
   skos:prefLabel "Cyclone-impacted littoral rain forest" ;
 .
 <http://w3id.org/env/aemf/e1.21>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "1.21" ;
   skos:prefLabel "Rainforest and vine thicket (wet/dry/semi-deciduous)" ;
 .
 <http://w3id.org/env/aemf/e1.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "1.23" ;
   skos:prefLabel "Rainforest and vine thicket (very wet /evergreen)" ;
 .
 <http://w3id.org/env/aemf/e1.24>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "1.24" ;
   skos:prefLabel "Cyclone scrub (wind disturbed rainforest and vine thicket)" ;
 .
 <http://w3id.org/env/aemf/e10.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.11" ;
   skos:prefLabel "Alpine grassland" ;
 .
 <http://w3id.org/env/aemf/e10.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.12" ;
   skos:prefLabel "Alpine grasslands with interspersed shrubs" ;
 .
 <http://w3id.org/env/aemf/e10.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.22" ;
   skos:prefLabel "Beach spinifex grassland" ;
 .
 <http://w3id.org/env/aemf/e10.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.23" ;
   skos:prefLabel "Wave zone" ;
 .
 <http://w3id.org/env/aemf/e10.31>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.31" ;
   skos:prefLabel "Temperate mesic grassland" ;
 .
 <http://w3id.org/env/aemf/e10.32>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.32" ;
   skos:prefLabel "Depauperate temperate mesic grassland" ;
 .
 <http://w3id.org/env/aemf/e10.41>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.41" ;
   skos:prefLabel "Annual grasses and forbs dominate" ;
 .
 <http://w3id.org/env/aemf/e10.42>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.42" ;
   skos:prefLabel "Perennial-dominated tussock grassland" ;
 .
 <http://w3id.org/env/aemf/e10.43>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.43" ;
   skos:prefLabel "Low ground-cover" ;
 .
 <http://w3id.org/env/aemf/e10.44>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "10.44" ;
   skos:prefLabel "Dry woodland, with perennial grasses" ;
 .
 <http://w3id.org/env/aemf/e11.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "11.11" ;
   skos:prefLabel "Connected hummock grassland" ;
 .
 <http://w3id.org/env/aemf/e11.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "11.12" ;
   skos:prefLabel "Bare ground" ;
 .
 <http://w3id.org/env/aemf/e11.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "11.13" ;
   skos:prefLabel "Young hummock grassland" ;
 .
 <http://w3id.org/env/aemf/e11.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "11.14" ;
   skos:prefLabel "Intermediate-aged hummock grassland" ;
 .
 <http://w3id.org/env/aemf/e11.15>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "11.15" ;
   skos:prefLabel "Open hummock grassland" ;
 .
 <http://w3id.org/env/aemf/e12.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "12.11" ;
   skos:prefLabel "Permanent wet" ;
 .
 <http://w3id.org/env/aemf/e12.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "12.12" ;
   skos:prefLabel "Permanent dry" ;
 .
 <http://w3id.org/env/aemf/e12.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "12.13" ;
   skos:prefLabel "Semi-permanent wet" ;
 .
 <http://w3id.org/env/aemf/e12.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "12.14" ;
   skos:prefLabel "Semi-permanent dry" ;
 .
 <http://w3id.org/env/aemf/e12.15>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "12.15" ;
   skos:prefLabel "Temporary wet" ;
 .
 <http://w3id.org/env/aemf/e12.16>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "12.16" ;
   skos:prefLabel "Temporary dry" ;
 .
 <http://w3id.org/env/aemf/e13.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.11" ;
   skos:prefLabel "Seagrass beds" ;
 .
 <http://w3id.org/env/aemf/e13.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.12" ;
   skos:prefLabel "Ocean floor" ;
 .
 <http://w3id.org/env/aemf/e13.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.13" ;
   skos:prefLabel "Unvegetated marsh" ;
 .
 <http://w3id.org/env/aemf/e13.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.14" ;
   skos:prefLabel "Zonal saltmarsh/ saltpan community" ;
 .
 <http://w3id.org/env/aemf/e13.16>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e13.21> ;
   skos:notation "13.16" ;
   skos:prefLabel "Zonal mangrove forest" ;
 .
 <http://w3id.org/env/aemf/e13.17>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.17" ;
   skos:prefLabel "Mudflat" ;
 .
 <http://w3id.org/env/aemf/e13.18>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.18" ;
   skos:prefLabel "Damaged mangrove forest" ;
 .
 <http://w3id.org/env/aemf/e13.19>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.19" ;
   skos:prefLabel "Severely damaged (dieback) mangrove forest" ;
 .
 <http://w3id.org/env/aemf/e13.21>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e13.16> ;
   skos:notation "13.21" ;
   skos:prefLabel "Zonal mangrove forest" ;
 .
 <http://w3id.org/env/aemf/e13.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.22" ;
   skos:prefLabel "Dieback mangrove forest" ;
 .
 <http://w3id.org/env/aemf/e13.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "13.23" ;
   skos:prefLabel "Rocky shoreline, mudflat, chenopond shrubland" ;
 .
 <http://w3id.org/env/aemf/e14.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "14.13" ;
   skos:prefLabel "Mixed-age chenopod shrubland" ;
 .
 <http://w3id.org/env/aemf/e14.14>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e9.83> ;
   skos:notation "14.14" ;
   skos:prefLabel "Sparse shrubland" ;
 .
 <http://w3id.org/env/aemf/e14.21>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "14.21" ;
   skos:prefLabel "Dry succulent samphire shrublands/ salt lake" ;
 .
 <http://w3id.org/env/aemf/e14.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "14.22" ;
   skos:prefLabel "Diverse salt lake system" ;
 .
 <http://w3id.org/env/aemf/e14.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "14.23" ;
   skos:prefLabel "Ephemeral salt lake" ;
 .
 <http://w3id.org/env/aemf/e15.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "15.11" ;
   skos:prefLabel "Typical lowland stream" ;
 .
 <http://w3id.org/env/aemf/e15.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "15.12" ;
   skos:prefLabel "Flooded lowland stream" ;
 .
 <http://w3id.org/env/aemf/e15.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "15.13" ;
   skos:prefLabel "Drought-impacted lowland stream" ;
 .
 <http://w3id.org/env/aemf/e16.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "16.11" ;
   skos:prefLabel "NA expression" ;
 .
 <http://w3id.org/env/aemf/e2.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.13" ;
   skos:prefLabel "Swamp sclerophyll forest on waterlogged / periodically inundated alluvial flats / heavy soils" ;
 .
 <http://w3id.org/env/aemf/e2.21>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.21" ;
   skos:prefLabel "Mature tall obligate-seeder eucalypt forest" ;
 .
 <http://w3id.org/env/aemf/e2.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.22" ;
   skos:prefLabel "Regenerating pole obligate-seeder eucalypt stands" ;
 .
 <http://w3id.org/env/aemf/e2.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.23" ;
   skos:prefLabel "Seedling to sapling obligate-seeder eucalypts" ;
 .
 <http://w3id.org/env/aemf/e2.26>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.26" ;
   skos:prefLabel "Humid Acacia dominated shrubland, woodlands and forests" ;
 .
 <http://w3id.org/env/aemf/e2.27>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e2.36> ;
   skos:notation "2.27" ;
   skos:prefLabel "Mixed forest with rainforest understorey and eucalypt overstorey" ;
 .
 <http://w3id.org/env/aemf/e2.31>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.31" ;
   skos:prefLabel "Mature eucalypt forests" ;
 .
 <http://w3id.org/env/aemf/e2.32>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.32" ;
   skos:prefLabel "Resprouting eucalypt forests" ;
 .
 <http://w3id.org/env/aemf/e2.33>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.33" ;
   skos:prefLabel "Recolonising eucalypt forests" ;
 .
 <http://w3id.org/env/aemf/e2.34>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.34" ;
   skos:prefLabel "Reduced canopy forests" ;
 .
 <http://w3id.org/env/aemf/e2.35>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "2.35" ;
   skos:prefLabel "Non-eucalypt vegetation" ;
 .
 <http://w3id.org/env/aemf/e2.36>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e2.27> ;
   skos:notation "2.36" ;
   skos:prefLabel "Mixed forest with rainforest understorey and eucalypt overstorey" ;
 .
 <http://w3id.org/env/aemf/e3.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.11" ;
   skos:prefLabel "Grassy woodland with pulsed recruitment" ;
 .
 <http://w3id.org/env/aemf/e3.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.12" ;
   skos:prefLabel "Eucalypt woodlands with a grassy understorey" ;
 .
 <http://w3id.org/env/aemf/e3.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.13" ;
   skos:prefLabel "Eucalypt-native pine woodland" ;
 .
 <http://w3id.org/env/aemf/e3.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.14" ;
   skos:prefLabel "Eucalypt woodland with a shrub/grass understorey" ;
 .
 <http://w3id.org/env/aemf/e3.15>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.15" ;
   skos:prefLabel "Eucalypt woodland with she-oaks or shrub-dominated understorey" ;
 .
 <http://w3id.org/env/aemf/e3.21>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.21" ;
   skos:prefLabel "Dense seedling eucalypts" ;
 .
 <http://w3id.org/env/aemf/e3.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.22" ;
   skos:prefLabel "Dense pole-stage eucalypt stands" ;
 .
 <http://w3id.org/env/aemf/e3.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.23" ;
   skos:prefLabel "Mature floodplain eucalypt forest/woodland" ;
 .
 <http://w3id.org/env/aemf/e3.24>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.24" ;
   skos:prefLabel "Reduced tree canopy" ;
 .
 <http://w3id.org/env/aemf/e3.31>
-  a emfo:State ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.31-e3.32> ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.31-e99.99> ;
+  a emfo:Expression ;
   skos:definition """Fire, drought, flood, and intense wind-throw can kill 
 large stands of adult trees. This is followed by dense 
 seedling recruitment, leading to a landscape 
@@ -1006,12 +1004,14 @@ this state will shift to a Dense sapling stand. """ ;
 <http://w3id.org/env/aemf/e3.31-e3.32>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Time_15-40_years ;
-  emfo:toState <http://w3id.org/env/aemf/e3.32> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.31> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.32> ;
 .
 <http://w3id.org/env/aemf/e3.31-e99.99>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Repeat_fire_flood_or_storm ;
-  emfo:toState <http://w3id.org/env/aemf/e99.99> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.31> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e99.99> ;
   skos:definition """If young obligate-seeder woodlands are burnt again 
 too soon after a fire, there is likely to be limited 
 seed supply for dense seedling recruitment. In
@@ -1024,10 +1024,7 @@ chenopod-dominant understorey, or mallee where
 mallee was already present. """ ;
 .
 <http://w3id.org/env/aemf/e3.32>
-  a emfo:State ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.32-e3.31> ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.32-e3.33> ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.32-e99.99> ;
+  a emfo:Expression ;
   skos:definition """As the small seedling eucalypts grow, intra-specific 
 competition sets in, resulting in a Dense sapling 
 stand with reduced individual growth rates (Image 
@@ -1049,17 +1046,20 @@ inter-fire eucalypt recruits. """ ;
 <http://w3id.org/env/aemf/e3.32-e3.31>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Fire_or_flood ;
-  emfo:toState <http://w3id.org/env/aemf/e3.31> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.32> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.31> ;
 .
 <http://w3id.org/env/aemf/e3.32-e3.33>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Time_150_years ;
-  emfo:toState <http://w3id.org/env/aemf/e3.33> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.32> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.33> ;
 .
 <http://w3id.org/env/aemf/e3.32-e99.99>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Repeat_fire_flood_or_storm ;
-  emfo:toState <http://w3id.org/env/aemf/e99.99> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.32> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e99.99> ;
   skos:definition """If young obligate-seeder woodlands are burnt again 
 too soon after a fire, there is likely to be limited 
 seed supply for dense seedling recruitment. In
@@ -1072,10 +1072,7 @@ chenopod-dominant understorey, or mallee where
 mallee was already present. """ ;
 .
 <http://w3id.org/env/aemf/e3.33>
-  a emfo:State ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.33-e3.31> ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.33-e3.33> ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.33-e3.34> ;
+  a emfo:Expression ;
   skos:definition """If there are no major or localised disturbances 
 within 150 years since fire, the woodland 
 community develops to a stand of large trees of a 
@@ -1099,22 +1096,23 @@ inter-fire eucalypt recruits. """ ;
 <http://w3id.org/env/aemf/e3.33-e3.31>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Fire_flood_storm ;
-  emfo:toState <http://w3id.org/env/aemf/e3.31> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.33> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.31> ;
 .
 <http://w3id.org/env/aemf/e3.33-e3.33>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Ongoing_time_no_major_or_localized_disturbances ;
-  emfo:toState <http://w3id.org/env/aemf/e3.33> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.33> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.33> ;
 .
 <http://w3id.org/env/aemf/e3.33-e3.34>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Localised_disturbance_250_years ;
-  emfo:toState <http://w3id.org/env/aemf/e3.34> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.33> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.34> ;
 .
 <http://w3id.org/env/aemf/e3.34>
-  a emfo:State ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.34-e3.31> ;
-  emfo:toPathway <http://w3id.org/env/aemf/e3.34-e3.34> ;
+  a emfo:Expression ;
   skos:definition """This woodland state can occur when small patches 
 of eucalypt recruits develop and grow in localised 
 canopy/root zone gaps following the death of some 
@@ -1132,434 +1130,436 @@ woodland.  """ ;
 <http://w3id.org/env/aemf/e3.34-e3.31>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Fire_flood_storm ;
-  emfo:toState <http://w3id.org/env/aemf/e3.31> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.34> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.31> ;
 .
 <http://w3id.org/env/aemf/e3.34-e3.34>
   a emfo:Pathway ;
   emfo:dueToPressure aemf:Ongoing_intermittent_gap-phase_recruitment ;
-  emfo:toState <http://w3id.org/env/aemf/e3.34> ;
+  emfo:fromExpression <http://w3id.org/env/aemf/e3.34> ;
+  emfo:toExpression <http://w3id.org/env/aemf/e3.34> ;
 .
 <http://w3id.org/env/aemf/e3.41>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.41" ;
   skos:prefLabel "Heathy woodland (/shrubland) with depauperate understorey" ;
 .
 <http://w3id.org/env/aemf/e3.42>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.42" ;
   skos:prefLabel "Heathy woodland with diverse shrub/sedge understorey" ;
 .
 <http://w3id.org/env/aemf/e3.43>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.43" ;
   skos:prefLabel "Heathland with basally-resprouting eucalypts" ;
 .
 <http://w3id.org/env/aemf/e3.51>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.51" ;
   skos:prefLabel "Mixed-size resprouting woodland" ;
 .
 <http://w3id.org/env/aemf/e3.52>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.52" ;
   skos:prefLabel "Mixed-age tropical woodland" ;
 .
 <http://w3id.org/env/aemf/e3.53>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.53" ;
   skos:prefLabel "Bimodal woodland" ;
 .
 <http://w3id.org/env/aemf/e3.54>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.54" ;
   skos:prefLabel "Old shrubby woodland" ;
 .
 <http://w3id.org/env/aemf/e3.55>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.55" ;
   skos:prefLabel "Drought-affected woodland" ;
 .
 <http://w3id.org/env/aemf/e3.61>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.61" ;
   skos:prefLabel "Sub-alpine eucalypt woodlands with a grassy understorey" ;
 .
 <http://w3id.org/env/aemf/e3.62>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "3.62" ;
   skos:prefLabel "Sub-alpine eucalypt woodlands with a shrub understorey" ;
 .
 <http://w3id.org/env/aemf/e4.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.12" ;
   skos:prefLabel "Brigalow" ;
 .
 <http://w3id.org/env/aemf/e4.21>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e4.32> ;
   skos:notation "4.21" ;
   skos:prefLabel "Drought-impacted acacia woodlands" ;
 .
 <http://w3id.org/env/aemf/e4.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.22" ;
   skos:prefLabel "Acacia cambagei, A georginae (gidgee) dominant woodlands" ;
 .
 <http://w3id.org/env/aemf/e4.31>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.31" ;
   skos:prefLabel "Acaia shirleyi (lancewood) dominant woodlands" ;
 .
 <http://w3id.org/env/aemf/e4.32>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e4.21> ;
   skos:notation "4.32" ;
   skos:prefLabel "Drought-impacted acacia woodlands" ;
 .
 <http://w3id.org/env/aemf/e4.41>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.41" ;
   skos:prefLabel "Mulga and grass" ;
 .
 <http://w3id.org/env/aemf/e4.42>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.42" ;
   skos:prefLabel "Tussock grass and young mulga" ;
 .
 <http://w3id.org/env/aemf/e4.43>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.43" ;
   skos:prefLabel "Grassy mulga" ;
 .
 <http://w3id.org/env/aemf/e4.52>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.52" ;
   skos:prefLabel "Myall/blackwood" ;
 .
 <http://w3id.org/env/aemf/e4.61>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.61" ;
   skos:prefLabel "WA Pindan vegetation" ;
 .
 <http://w3id.org/env/aemf/e4.62>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.62" ;
   skos:prefLabel "Open acacia woodland with grassy understorey" ;
 .
 <http://w3id.org/env/aemf/e4.71>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.71" ;
   skos:prefLabel "Sandy soil Acacia shrublands" ;
 .
 <http://w3id.org/env/aemf/e4.72>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "4.72" ;
   skos:prefLabel "Annual groundcover with regenerating shrubs" ;
 .
 <http://w3id.org/env/aemf/e5.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "5.11" ;
   skos:prefLabel "Mature stand with Callitris recruits" ;
 .
 <http://w3id.org/env/aemf/e5.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "5.12" ;
   skos:prefLabel "Patch-scale recruiting Callitris woodlands" ;
 .
 <http://w3id.org/env/aemf/e5.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "5.13" ;
   skos:prefLabel "Patch-scale dense sapling stand" ;
 .
 <http://w3id.org/env/aemf/e5.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "5.14" ;
   skos:prefLabel "Mature stand with no Callitris recruits" ;
 .
 <http://w3id.org/env/aemf/e6.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.12" ;
   skos:prefLabel "Mixed age Casuarina forest/woodlands on coastal dunes" ;
 .
 <http://w3id.org/env/aemf/e6.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.13" ;
   skos:prefLabel "Beach, ocean floor" ;
 .
 <http://w3id.org/env/aemf/e6.21>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.21" ;
   skos:prefLabel "Casuarina woodland shrubby expression" ;
 .
 <http://w3id.org/env/aemf/e6.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.22" ;
   skos:prefLabel "Casuarina woodland shrubby expression" ;
 .
 <http://w3id.org/env/aemf/e6.25>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.25" ;
   skos:prefLabel "Casuarina woodland grassy expression" ;
 .
 <http://w3id.org/env/aemf/e6.33>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.33" ;
   skos:prefLabel "Mixed-age Casuarina stand" ;
 .
 <http://w3id.org/env/aemf/e6.34>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.34" ;
   skos:prefLabel "Beach with few seedlings or river bed" ;
 .
 <http://w3id.org/env/aemf/e6.43>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "6.43" ;
   skos:prefLabel "Casuarina swamp oak forest" ;
 .
 <http://w3id.org/env/aemf/e7.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.11" ;
   skos:prefLabel "Melaleuca open forest with grass/sedge understorey" ;
 .
 <http://w3id.org/env/aemf/e7.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.12" ;
   skos:prefLabel "Mid-dense forest with rainforest/palm understorey" ;
 .
 <http://w3id.org/env/aemf/e7.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.14" ;
   skos:prefLabel "Mid-dense forest with dense melaleuca seedling/sapling layer" ;
 .
 <http://w3id.org/env/aemf/e7.21>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.21" ;
   skos:prefLabel "Melaleuca woodland with grass/forb understorey" ;
 .
 <http://w3id.org/env/aemf/e7.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.22" ;
   skos:prefLabel "Lowland woodland with dense Melaleuca sapling layer" ;
 .
 <http://w3id.org/env/aemf/e7.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.23" ;
   skos:prefLabel "Lowland woodland with dense Melaleuca midstorey layer" ;
 .
 <http://w3id.org/env/aemf/e7.24>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.24" ;
   skos:prefLabel "Mixed species woodland/shrubland with rainforest/semi-deciduous understorey" ;
 .
 <http://w3id.org/env/aemf/e7.29>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.29" ;
   skos:prefLabel "Sparse melaleuca woodland with Eucalypt emergents" ;
 .
 <http://w3id.org/env/aemf/e7.30>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "7.30" ;
   skos:prefLabel "Mixed species woodland/shrubland" ;
 .
 <http://w3id.org/env/aemf/e8.11>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.11" ;
   skos:prefLabel "Tussock grassland with resprouting mallee" ;
 .
 <http://w3id.org/env/aemf/e8.12>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.12" ;
   skos:prefLabel "Tussock grass mallee woodland " ;
 .
 <http://w3id.org/env/aemf/e8.13>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.13" ;
   skos:prefLabel "Chenopod shrubland / tussock grassland with resprouting mallee" ;
 .
 <http://w3id.org/env/aemf/e8.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.14" ;
   skos:prefLabel "Chenopod mallee woodland with tussock grassland" ;
 .
 <http://w3id.org/env/aemf/e8.22>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.22" ;
   skos:prefLabel "Depauperate Triodia grassland/shrubland with resprouting mallee" ;
 .
 <http://w3id.org/env/aemf/e8.23>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.23" ;
   skos:prefLabel "Depauperate Triodia /shrubby mallee woodland" ;
 .
 <http://w3id.org/env/aemf/e8.24>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.24" ;
   skos:prefLabel "Diverse Triodia / shrubby malle woodland" ;
 .
 <http://w3id.org/env/aemf/e8.25>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.25" ;
   skos:prefLabel "Diverse Triodia grassland/shrubland with resprouting mallee" ;
 .
 <http://w3id.org/env/aemf/e8.32>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.32" ;
   skos:prefLabel "Dense seedling Maalok" ;
 .
 <http://w3id.org/env/aemf/e8.33>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.33" ;
   skos:prefLabel "Mature multi-age Maalok" ;
 .
 <http://w3id.org/env/aemf/e8.34>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.34" ;
   skos:prefLabel "Mature even aged Maalok" ;
 .
 <http://w3id.org/env/aemf/e8.35>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.35" ;
   skos:prefLabel "Dense sapling Maalok" ;
 .
 <http://w3id.org/env/aemf/e8.41>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.41" ;
   skos:prefLabel "Diverse heathland with resprouting mallee" ;
 .
 <http://w3id.org/env/aemf/e8.42>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.42" ;
   skos:prefLabel "Diverse heathy mallee woodland" ;
 .
 <http://w3id.org/env/aemf/e8.43>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.43" ;
   skos:prefLabel "Depauperate heathy mallee woodland" ;
 .
 <http://w3id.org/env/aemf/e8.44>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "8.44" ;
   skos:prefLabel "Depauperate heathland with resprouting mallee" ;
 .
 <http://w3id.org/env/aemf/e9.11>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e9.32> ;
   skos:notation "9.11" ;
   skos:prefLabel "Thicket" ;
 .
 <http://w3id.org/env/aemf/e9.12>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e9.61> ;
   skos:notation "9.12" ;
   skos:prefLabel "Mixed age dry heath" ;
 .
 <http://w3id.org/env/aemf/e9.14>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.14" ;
   skos:prefLabel "Open dry heath" ;
 .
 <http://w3id.org/env/aemf/e9.21>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.21" ;
   skos:prefLabel "Coastal thicket" ;
 .
 <http://w3id.org/env/aemf/e9.24>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.24" ;
   skos:prefLabel "Open dunal coastal heath" ;
 .
 <http://w3id.org/env/aemf/e9.25>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.25" ;
   skos:prefLabel "Mixed-age dry coastal heath" ;
 .
 <http://w3id.org/env/aemf/e9.26>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.26" ;
   skos:prefLabel "Open dry coastal rocky heath" ;
 .
 <http://w3id.org/env/aemf/e9.27>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.27" ;
   skos:prefLabel "rock" ;
 .
 <http://w3id.org/env/aemf/e9.32>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e9.11> ;
   skos:notation "9.32" ;
   skos:prefLabel "Thicket" ;
 .
 <http://w3id.org/env/aemf/e9.33>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.33" ;
   skos:prefLabel "Mixed age dry alpine heath" ;
 .
 <http://w3id.org/env/aemf/e9.34>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.34" ;
   skos:prefLabel "Open dry alpine heath" ;
 .
 <http://w3id.org/env/aemf/e9.61>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e9.12> ;
   skos:notation "9.61" ;
   skos:prefLabel "Mixed age dry heath" ;
 .
 <http://w3id.org/env/aemf/e9.62>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.62" ;
   skos:prefLabel "Mixed age wet heath" ;
 .
 <http://w3id.org/env/aemf/e9.63>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.63" ;
   skos:prefLabel "Open wet heath" ;
 .
 <http://w3id.org/env/aemf/e9.71>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.71" ;
   skos:prefLabel "Wet heath" ;
 .
 <http://w3id.org/env/aemf/e9.72>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.72" ;
   skos:prefLabel "Wet-dry heath" ;
 .
 <http://w3id.org/env/aemf/e9.73>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.73" ;
   skos:prefLabel "Shrubby wet-dry heath" ;
 .
 <http://w3id.org/env/aemf/e9.81>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.81" ;
   skos:prefLabel "Long undisturbed shrubland" ;
 .
 <http://w3id.org/env/aemf/e9.82>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.82" ;
   skos:prefLabel "Diverse shrubland" ;
 .
 <http://w3id.org/env/aemf/e9.83>
-  a emfo:State ;
+  a emfo:Expression ;
   owl:sameAs <http://w3id.org/env/aemf/e14.14> ;
   skos:notation "9.83" ;
   skos:prefLabel "Sparse shrubland" ;
 .
 <http://w3id.org/env/aemf/e9.84>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:notation "9.84" ;
   skos:prefLabel "Depauperate shrubland" ;
 .
 <http://w3id.org/env/aemf/e99.99>
-  a emfo:State ;
+  a emfo:Expression ;
   skos:prefLabel "Alternative community" ;
 .
 aemf:u1
   a emfo:UmbrellaClass ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a1.1> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a1.2> ;
-  emfo:related-mvg aemf:MVG1 ;
+  emfo:related-mvg aemf:MVG01 ;
   skos:notation "1" ;
   skos:prefLabel "Rainforests and Vine thickets" ;
 .
@@ -1624,9 +1624,9 @@ aemf:u2
   emfo:hasArchetype <http://w3id.org/env/aemf/a2.1> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a2.2> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a2.3> ;
-  emfo:related-mvg aemf:MVG2 ;
-  emfo:related-mvg aemf:MVG3 ;
-  emfo:related-mvg aemf:MVG4 ;
+  emfo:related-mvg aemf:MVG02 ;
+  emfo:related-mvg aemf:MVG03 ;
+  emfo:related-mvg aemf:MVG04 ;
   skos:notation "2" ;
   skos:prefLabel "Eucalypt forests" ;
 .
@@ -1649,9 +1649,9 @@ Australia.""" ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a3.4> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a3.5> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a3.6> ;
+  emfo:related-mvg aemf:MVG05 ;
   emfo:related-mvg aemf:MVG11 ;
   emfo:related-mvg aemf:MVG12 ;
-  emfo:related-mvg aemf:MVG5 ;
   skos:definition """The ‘Eucalypt woodland’ umbrella group reflects the 
 concepts of the NVIS (2018) Major Vegetation 
 Groups MVG5 (Eucalypt woodlands), MVG11 
@@ -1713,17 +1713,17 @@ aemf:u4
   emfo:hasArchetype <http://w3id.org/env/aemf/a4.5> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a4.6> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a4.7> ;
+  emfo:related-mvg aemf:MVG06 ;
   emfo:related-mvg aemf:MVG13 ;
   emfo:related-mvg aemf:MVG15 ;
   emfo:related-mvg aemf:MVG16 ;
-  emfo:related-mvg aemf:MVG6 ;
   skos:notation "4" ;
   skos:prefLabel "Acacia Woodlands and Shrublands" ;
 .
 aemf:u5
   a emfo:UmbrellaClass ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a5.1> ;
-  emfo:related-mvg aemf:MVG7 ;
+  emfo:related-mvg aemf:MVG07 ;
   skos:notation "5" ;
   skos:prefLabel "Callitris Forests and Woodlands" ;
 .
@@ -1733,9 +1733,9 @@ aemf:u6
   emfo:hasArchetype <http://w3id.org/env/aemf/a6.2> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a6.3> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a6.4> ;
+  emfo:related-mvg aemf:MVG08 ;
   emfo:related-mvg aemf:MVG15 ;
   emfo:related-mvg aemf:MVG31 ;
-  emfo:related-mvg aemf:MVG8 ;
   skos:notation "6" ;
   skos:prefLabel "Casuarina  Forests and Woodlands" ;
 .
@@ -1743,9 +1743,9 @@ aemf:u7
   a emfo:UmbrellaClass ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a7.1> ;
   emfo:hasArchetype <http://w3id.org/env/aemf/a7.2> ;
+  emfo:related-mvg aemf:MVG09 ;
   emfo:related-mvg aemf:MVG15 ;
   emfo:related-mvg aemf:MVG17 ;
-  emfo:related-mvg aemf:MVG9 ;
   skos:notation "7" ;
   skos:prefLabel "Melaleuca Forests, Woodlands and Shrublands" ;
 .
@@ -1779,6 +1779,11 @@ emfo:Archetype
   rdfs:subClassOf skos:Concept ;
   skos:prefLabel "Archetype model" ;
 .
+emfo:Expression
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  skos:prefLabel "Expression" ;
+.
 emfo:NVIS-MVG
   a owl:Class ;
   rdfs:subClassOf skos:Concept ;
@@ -1789,13 +1794,13 @@ emfo:Pathway
   rdfs:subClassOf skos:Concept ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:allValuesFrom emfo:State ;
-      owl:onProperty emfo:fromState ;
+      owl:allValuesFrom emfo:Expression ;
+      owl:onProperty emfo:fromExpression ;
     ] ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:allValuesFrom emfo:State ;
-      owl:onProperty emfo:toState ;
+      owl:allValuesFrom emfo:Expression ;
+      owl:onProperty emfo:toExpression ;
     ] ;
   skos:prefLabel "Pathway" ;
 .
@@ -1803,11 +1808,6 @@ emfo:Pressure
   a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   skos:prefLabel "Ecosystem pressure type" ;
-.
-emfo:State
-  a owl:Class ;
-  rdfs:subClassOf skos:Concept ;
-  skos:prefLabel "State" ;
 .
 emfo:Transition
   a owl:Class ;
@@ -1826,21 +1826,21 @@ emfo:dueToPressure
   rdfs:subPropertyOf skos:related ;
   skos:prefLabel "due to ecosystem pressure" ;
 .
-emfo:fromPathway
-  a owl:ObjectProperty ;
-  rdfs:domain emfo:State ;
-  rdfs:range emfo:Pathway ;
-  rdfs:subPropertyOf skos:related ;
-  owl:inverseOf emfo:toState ;
-  skos:prefLabel "from pathway" ;
-.
-emfo:fromState
+emfo:fromExpression
   a owl:ObjectProperty ;
   rdfs:domain emfo:Pathway ;
-  rdfs:range emfo:State ;
+  rdfs:range emfo:Expression ;
   rdfs:subPropertyOf skos:related ;
   owl:inverseOf emfo:toPathway ;
-  skos:prefLabel "previous state" ;
+  skos:prefLabel "previous expression" ;
+.
+emfo:fromPathway
+  a owl:ObjectProperty ;
+  rdfs:domain emfo:Expression ;
+  rdfs:range emfo:Pathway ;
+  rdfs:subPropertyOf skos:related ;
+  owl:inverseOf emfo:toExpression ;
+  skos:prefLabel "from pathway" ;
 .
 emfo:hasArchetype
   a owl:ObjectProperty ;
@@ -1852,7 +1852,7 @@ emfo:hasArchetype
 emfo:hasExpression
   a owl:ObjectProperty ;
   rdfs:domain emfo:Archetype ;
-  rdfs:range emfo:State ;
+  rdfs:range emfo:Expression ;
   rdfs:subPropertyOf skos:narrower ;
   skos:prefLabel "has expression" ;
 .
@@ -1863,19 +1863,19 @@ emfo:related-mvg
   rdfs:subPropertyOf skos:relatedMatch ;
   skos:prefLabel "Link to NVIS Major Vegetation Group" ;
 .
-emfo:toPathway
-  a owl:ObjectProperty ;
-  rdfs:domain emfo:State ;
-  rdfs:range emfo:Pathway ;
-  rdfs:subPropertyOf skos:related ;
-  owl:inverseOf emfo:fromState ;
-  skos:prefLabel "to pathway" ;
-.
-emfo:toState
+emfo:toExpression
   a owl:ObjectProperty ;
   rdfs:domain emfo:Pathway ;
-  rdfs:range emfo:State ;
+  rdfs:range emfo:Expression ;
   rdfs:subPropertyOf skos:related ;
   owl:inverseOf emfo:fromPathway ;
-  skos:prefLabel "resulting state" ;
+  skos:prefLabel "resulting expression" ;
+.
+emfo:toPathway
+  a owl:ObjectProperty ;
+  rdfs:domain emfo:Expression ;
+  rdfs:range emfo:Pathway ;
+  rdfs:subPropertyOf skos:related ;
+  owl:inverseOf emfo:fromExpression ;
+  skos:prefLabel "to pathway" ;
 .
