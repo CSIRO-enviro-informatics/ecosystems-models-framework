@@ -1,6 +1,7 @@
 # baseURI: http://w3id.org/env/aemf
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/2006/time
 
 @prefix aemf: <http://w3id.org/env/aemf/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -9,6 +10,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://w3id.org/env/aemf>
@@ -25,25 +27,28 @@
   dcterms:title "The Australian Ecosystems Models Framework Ontology" ;
   owl:imports <http://purl.org/dc/elements/1.1/> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/2006/time> ;
 .
 aemf:Fire_flood_storm
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Fire, flood, storm" ;
 .
 aemf:Fire_or_flood
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Fire or flood" ;
 .
 aemf:Localised_disturbance_250_years
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Localised disturbance >~250 years" ;
 .
 aemf:MVG01
   a emfo:NVIS-MVG ;
+  skos:notation "1" ;
   skos:prefLabel "Rainforests and Vine thickets" ;
 .
 aemf:MVG02
   a emfo:NVIS-MVG ;
+  skos:notation "2" ;
   skos:prefLabel "Eucalypt Tall Open Forests" ;
 .
 aemf:MVG03
@@ -171,23 +176,23 @@ aemf:MVG99
   skos:prefLabel "Unknown/No Data" ;
 .
 aemf:Ongoing_intermittent_gap-phase_recruitment
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Ongoing intermittent gap-phase recruitment" ;
 .
 aemf:Ongoing_time_no_major_or_localized_disturbances
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Ongoing time, no major or localized disturbances" ;
 .
 aemf:Repeat_fire_flood_or_storm
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Repeat fire, flood or storm" ;
 .
 aemf:Time_15-40_years
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Time 15-40 years" ;
 .
 aemf:Time_150_years
-  a emfo:Pressure ;
+  a emfo:Driver ;
   skos:prefLabel "Time >150 years" ;
 .
 <http://w3id.org/env/aemf/a1.1>
@@ -1003,13 +1008,13 @@ this state will shift to a Dense sapling stand. """ ;
 .
 <http://w3id.org/env/aemf/e3.31-e3.32>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Time_15-40_years ;
+  emfo:dueToDriver aemf:Time_15-40_years ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.31> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.32> ;
 .
 <http://w3id.org/env/aemf/e3.31-e99.99>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Repeat_fire_flood_or_storm ;
+  emfo:dueToDriver aemf:Repeat_fire_flood_or_storm ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.31> ;
   emfo:toExpression <http://w3id.org/env/aemf/e99.99> ;
   skos:definition """If young obligate-seeder woodlands are burnt again 
@@ -1025,6 +1030,7 @@ mallee was already present. """ ;
 .
 <http://w3id.org/env/aemf/e3.32>
   a emfo:Expression ;
+  emfo:percentCover "57" ;
   skos:definition """As the small seedling eucalypts grow, intra-specific 
 competition sets in, resulting in a Dense sapling 
 stand with reduced individual growth rates (Image 
@@ -1045,19 +1051,19 @@ inter-fire eucalypt recruits. """ ;
 .
 <http://w3id.org/env/aemf/e3.32-e3.31>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Fire_or_flood ;
+  emfo:dueToDriver aemf:Fire_or_flood ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.32> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.31> ;
 .
 <http://w3id.org/env/aemf/e3.32-e3.33>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Time_150_years ;
+  emfo:dueToDriver aemf:Time_150_years ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.32> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.33> ;
 .
 <http://w3id.org/env/aemf/e3.32-e99.99>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Repeat_fire_flood_or_storm ;
+  emfo:dueToDriver aemf:Repeat_fire_flood_or_storm ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.32> ;
   emfo:toExpression <http://w3id.org/env/aemf/e99.99> ;
   skos:definition """If young obligate-seeder woodlands are burnt again 
@@ -1095,19 +1101,19 @@ inter-fire eucalypt recruits. """ ;
 .
 <http://w3id.org/env/aemf/e3.33-e3.31>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Fire_flood_storm ;
+  emfo:dueToDriver aemf:Fire_flood_storm ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.33> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.31> ;
 .
 <http://w3id.org/env/aemf/e3.33-e3.33>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Ongoing_time_no_major_or_localized_disturbances ;
+  emfo:dueToDriver aemf:Ongoing_time_no_major_or_localized_disturbances ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.33> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.33> ;
 .
 <http://w3id.org/env/aemf/e3.33-e3.34>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Localised_disturbance_250_years ;
+  emfo:dueToDriver aemf:Localised_disturbance_250_years ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.33> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.34> ;
 .
@@ -1129,13 +1135,13 @@ woodland.  """ ;
 .
 <http://w3id.org/env/aemf/e3.34-e3.31>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Fire_flood_storm ;
+  emfo:dueToDriver aemf:Fire_flood_storm ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.34> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.31> ;
 .
 <http://w3id.org/env/aemf/e3.34-e3.34>
   a emfo:Pathway ;
-  emfo:dueToPressure aemf:Ongoing_intermittent_gap-phase_recruitment ;
+  emfo:dueToDriver aemf:Ongoing_intermittent_gap-phase_recruitment ;
   emfo:fromExpression <http://w3id.org/env/aemf/e3.34> ;
   emfo:toExpression <http://w3id.org/env/aemf/e3.34> ;
 .
@@ -1777,7 +1783,32 @@ aemf:u9
 emfo:Archetype
   a owl:Class ;
   rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty skos:definition ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty skos:prefLabel ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty emfo:hasExpression ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty skos:notation ;
+    ] ;
   skos:prefLabel "Archetype model" ;
+.
+emfo:Driver
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  skos:prefLabel "Ecosystem driver" ;
 .
 emfo:Expression
   a owl:Class ;
@@ -1794,6 +1825,11 @@ emfo:Pathway
   rdfs:subClassOf skos:Concept ;
   rdfs:subClassOf [
       a owl:Restriction ;
+      owl:allValuesFrom emfo:Driver ;
+      owl:onProperty emfo:dueToDriver ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
       owl:allValuesFrom emfo:Expression ;
       owl:onProperty emfo:fromExpression ;
     ] ;
@@ -1802,12 +1838,12 @@ emfo:Pathway
       owl:allValuesFrom emfo:Expression ;
       owl:onProperty emfo:toExpression ;
     ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom time:Duration ;
+      owl:onProperty time:hasTemporalDuration ;
+    ] ;
   skos:prefLabel "Pathway" ;
-.
-emfo:Pressure
-  a owl:Class ;
-  rdfs:subClassOf skos:Concept ;
-  skos:prefLabel "Ecosystem pressure type" ;
 .
 emfo:Transition
   a owl:Class ;
@@ -1817,14 +1853,19 @@ emfo:Transition
 emfo:UmbrellaClass
   a owl:Class ;
   rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty emfo:hasArchetype ;
+    ] ;
   skos:prefLabel "Umbrella class" ;
 .
-emfo:dueToPressure
+emfo:dueToDriver
   a owl:ObjectProperty ;
   rdfs:domain emfo:Pathway ;
-  rdfs:range emfo:Pressure ;
+  rdfs:range emfo:Driver ;
   rdfs:subPropertyOf skos:related ;
-  skos:prefLabel "due to ecosystem pressure" ;
+  skos:prefLabel "due to ecosystem driver" ;
 .
 emfo:fromExpression
   a owl:ObjectProperty ;
@@ -1855,6 +1896,10 @@ emfo:hasExpression
   rdfs:range emfo:Expression ;
   rdfs:subPropertyOf skos:narrower ;
   skos:prefLabel "has expression" ;
+.
+emfo:percentCover
+  a owl:DatatypeProperty ;
+  skos:prefLabel "percent vegetation cover" ;
 .
 emfo:related-mvg
   a owl:ObjectProperty ;
